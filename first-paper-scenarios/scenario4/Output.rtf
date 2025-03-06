@@ -1,0 +1,1292 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2758
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs28 \cf0 rm -rf domain.pddl template.pddl templateInitial.pddl obs.dat hyps.dat plan.png real_hyp.dat\
+tar -jxvf experiments/illegalfishing/scenario4/scenario4.tar.bz2\
+Parsed Domain file domain.pddl successfully\
+Parsed Problem file templateInitial.pddl successfully\
+\
+Grounding...\
+Grounding complete!\
+\
+#> Real Goal: (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f1-1f) )\
+\
+-> Why Not goal (and (not (detected-in-surveillance))  (at-vessel-destination f0-4f)  (detected-concealment)  (not (detected-in-prohibited)) )?\
+-> It is because it cannot be realized by any feasible sequence of actions or plans.\
+\
+-> Why Not goal (and (not (detected-in-surveillance))  (not (detected-concealment))  (at-vessel-destination f0-4f)  (not (detected-in-prohibited)) )?\
+-> It is because it cannot be realized by any feasible sequence of actions or plans.\
+\
+-> Why Not goal (and (detected-in-prohibited)  (not (detected-in-surveillance))  (at-vessel-destination f0-4f)  (detected-concealment) )?\
+-> It is because it cannot be realized by any feasible sequence of actions or plans.\
+\
+-> Why Not goal (and (detected-in-prohibited)  (not (detected-in-surveillance))  (not (detected-concealment))  (at-vessel-destination f0-4f) )?\
+-> It is because it cannot be realized by any feasible sequence of actions or plans.\
+\
+ $> FilteredGoal[(and (at-vessel-destination f3-0f)  (detected-concealment)  (not (detected-in-prohibited)) ), (and (not (detected-concealment))  (at-vessel-destination f3-0f)  (not (detected-in-prohibited)) ), (and (not (detected-in-surveillance))  (at-vessel-destination f3-0f)  (detected-concealment)  (not (detected-in-prohibited)) ), (and (not (detected-in-surveillance))  (not (detected-concealment))  (at-vessel-destination f3-0f)  (not (detected-in-prohibited)) ), (and (detected-in-prohibited)  (not (detected-in-surveillance))  (at-vessel-destination f3-0f)  (detected-concealment) ), (and (detected-in-prohibited)  (not (detected-in-surveillance))  (not (detected-concealment))  (at-vessel-destination f3-0f) ), (and (detected-in-prohibited)  (at-vessel-destination f3-0f)  (detected-concealment) ), (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f3-0f) ), (and (detected-concealment)  (at-vessel-destination f1-1f)  (not (detected-in-prohibited)) ), (and (not (detected-concealment))  (at-vessel-destination f1-1f)  (not (detected-in-prohibited)) ), (and (not (detected-in-surveillance))  (detected-concealment)  (at-vessel-destination f1-1f)  (not (detected-in-prohibited)) ), (and (not (detected-in-surveillance))  (not (detected-concealment))  (at-vessel-destination f1-1f)  (not (detected-in-prohibited)) ), (and (detected-in-prohibited)  (not (detected-in-surveillance))  (detected-concealment)  (at-vessel-destination f1-1f) ), (and (detected-in-prohibited)  (not (detected-in-surveillance))  (not (detected-concealment))  (at-vessel-destination f1-1f) ), (and (detected-in-prohibited)  (detected-concealment)  (at-vessel-destination f1-1f) ), (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f1-1f) ), (and (at-vessel-destination f0-4f)  (detected-concealment)  (not (detected-in-prohibited)) ), (and (not (detected-concealment))  (at-vessel-destination f0-4f)  (not (detected-in-prohibited)) ), (and (detected-in-prohibited)  (at-vessel-destination f0-4f)  (detected-concealment) ), (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f0-4f) )]\
+\
+ # goal count:20\
+	 # Goal:(and (at-vessel-destination f3-0f)  (detected-concealment)  (not (detected-in-prohibited)) )\
+	 # ideal plan:[move f5-5f f5-4f left, move f5-4f f4-4f up, move f4-4f f4-3f left, move f4-3f f3-3f up, move f3-3f f3-2f left, turn_off_signals, covert f3-2f f2-2f up, turn_on_signals, move f3-2f f3-1f left, reach-destination f3-1f f3-0f left]\
+	 # Goal:(and (not (detected-concealment))  (at-vessel-destination f3-0f)  (not (detected-in-prohibited)) )\
+	 # ideal plan:[move f5-5f f5-4f left, move f5-4f f4-4f up, move f4-4f f4-3f left, move f4-3f f3-3f up, move f3-3f f3-2f left, move f3-2f f3-1f left, reach-destination f3-1f f3-0f left]\
+	 # Goal:(and (not (detected-in-surveillance))  (at-vessel-destination f3-0f)  (detected-concealment)  (not (detected-in-prohibited)) )\
+	 # ideal plan:[move f5-5f f5-4f left, move f5-4f f4-4f up, move f4-4f f4-3f left, move f4-3f f3-3f up, move f3-3f f3-2f left, turn_off_signals, covert f3-2f f2-2f up, turn_on_signals, move f3-2f f3-1f left, reach-destination f3-1f f3-0f left]\
+	 # Goal:(and (not (detected-in-surveillance))  (not (detected-concealment))  (at-vessel-destination f3-0f)  (not (detected-in-prohibited)) )\
+	 # ideal plan:[move f5-5f f5-4f left, move f5-4f f4-4f up, move f4-4f f4-3f left, move f4-3f f3-3f up, move f3-3f f3-2f left, move f3-2f f3-1f left, reach-destination f3-1f f3-0f left]\
+	 # Goal:(and (detected-in-prohibited)  (not (detected-in-surveillance))  (at-vessel-destination f3-0f)  (detected-concealment) )\
+	 # ideal plan:[move f5-5f f5-4f left, move f5-4f f4-4f up, enter-prohibited-area f4-4f f3-4f up, move f3-4f f3-3f left, move f3-3f f3-2f left, turn_off_signals, covert f3-2f f2-2f up, turn_on_signals, move f3-2f f3-1f left, reach-destination f3-1f f3-0f left]\
+	 # Goal:(and (detected-in-prohibited)  (not (detected-in-surveillance))  (not (detected-concealment))  (at-vessel-destination f3-0f) )\
+	 # ideal plan:[move f5-5f f5-4f left, move f5-4f f5-3f left, move f5-3f f5-2f left, enter-prohibited-area f5-2f f5-1f left, enter-prohibited-area f5-1f f5-0f left, move f5-0f f4-0f up, reach-destination f4-0f f3-0f up]\
+	 # Goal:(and (detected-in-prohibited)  (at-vessel-destination f3-0f)  (detected-concealment) )\
+	 # ideal plan:[move f5-5f f5-4f left, move f5-4f f4-4f up, enter-prohibited-area f4-4f f3-4f up, move f3-4f f3-3f left, move f3-3f f3-2f left, turn_off_signals, covert f3-2f f2-2f up, turn_on_signals, move f3-2f f3-1f left, reach-destination f3-1f f3-0f left]\
+	 # Goal:(and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f3-0f) )\
+	 # ideal plan:[move f5-5f f5-4f left, move f5-4f f5-3f left, move f5-3f f5-2f left, enter-prohibited-area f5-2f f5-1f left, enter-prohibited-area f5-1f f5-0f left, move f5-0f f4-0f up, reach-destination f4-0f f3-0f up]\
+	 # Goal:(and (detected-concealment)  (at-vessel-destination f1-1f)  (not (detected-in-prohibited)) )\
+	 # ideal plan:[move f5-5f f5-4f left, move f5-4f f4-4f up, move f4-4f f4-3f left, move f4-3f f3-3f up, move f3-3f f3-2f left, enter-surveillance-area f3-2f f2-2f up, enter-surveillance-area f2-2f f1-2f up, turn_off_signals, covert f1-2f f2-2f down, turn_on_signals, reach-destination f1-2f f1-1f left]\
+	 # Goal:(and (not (detected-concealment))  (at-vessel-destination f1-1f)  (not (detected-in-prohibited)) )\
+	 # ideal plan:[move f5-5f f5-4f left, move f5-4f f4-4f up, move f4-4f f4-3f left, move f4-3f f3-3f up, move f3-3f f3-2f left, move f3-2f f3-1f left, move f3-1f f2-1f up, reach-destination f2-1f f1-1f up]\
+	 # Goal:(and (not (detected-in-surveillance))  (detected-concealment)  (at-vessel-destination f1-1f)  (not (detected-in-prohibited)) )\
+	 # ideal plan:[move f5-5f f5-4f left, move f5-4f f4-4f up, move f4-4f f4-3f left, move f4-3f f3-3f up, move f3-3f f3-2f left, move f3-2f f3-1f left, move f3-1f f2-1f up, turn_off_signals, covert f2-1f f2-2f right, turn_on_signals, reach-destination f2-1f f1-1f up]\
+	 # Goal:(and (not (detected-in-surveillance))  (not (detected-concealment))  (at-vessel-destination f1-1f)  (not (detected-in-prohibited)) )\
+	 # ideal plan:[move f5-5f f5-4f left, move f5-4f f4-4f up, move f4-4f f4-3f left, move f4-3f f3-3f up, move f3-3f f3-2f left, move f3-2f f3-1f left, move f3-1f f2-1f up, reach-destination f2-1f f1-1f up]\
+	 # Goal:(and (detected-in-prohibited)  (not (detected-in-surveillance))  (detected-concealment)  (at-vessel-destination f1-1f) )\
+	 # ideal plan:[move f5-5f f5-4f left, move f5-4f f4-4f up, enter-prohibited-area f4-4f f3-4f up, move f3-4f f3-3f left, move f3-3f f3-2f left, move f3-2f f3-1f left, move f3-1f f2-1f up, turn_off_signals, covert f2-1f f2-2f right, turn_on_signals, reach-destination f2-1f f1-1f up]\
+	 # Goal:(and (detected-in-prohibited)  (not (detected-in-surveillance))  (not (detected-concealment))  (at-vessel-destination f1-1f) )\
+	 # ideal plan:[enter-prohibited-area f5-5f f4-5f up, enter-prohibited-area f4-5f f3-5f up, enter-prohibited-area f3-5f f3-4f left, move f3-4f f3-3f left, move f3-3f f3-2f left, move f3-2f f3-1f left, move f3-1f f2-1f up, reach-destination f2-1f f1-1f up]\
+	 # Goal:(and (detected-in-prohibited)  (detected-concealment)  (at-vessel-destination f1-1f) )\
+	 # ideal plan:[enter-prohibited-area f5-5f f4-5f up, enter-prohibited-area f4-5f f3-5f up, move f3-5f f2-5f up, move f2-5f f1-5f up, enter-surveillance-area f1-5f f1-4f left, enter-surveillance-area f1-4f f1-3f left, enter-surveillance-area f1-3f f1-2f left, turn_off_signals, covert f1-2f f2-2f down, turn_on_signals, reach-destination f1-2f f1-1f left]\
+	 # Goal:(and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f1-1f) )\
+	 # ideal plan:[enter-prohibited-area f5-5f f4-5f up, enter-prohibited-area f4-5f f3-5f up, enter-prohibited-area f3-5f f3-4f left, move f3-4f f3-3f left, enter-surveillance-area f3-3f f2-3f up, enter-surveillance-area f2-3f f1-3f up, enter-surveillance-area f1-3f f1-2f left, reach-destination f1-2f f1-1f left]\
+	 # Goal:(and (at-vessel-destination f0-4f)  (detected-concealment)  (not (detected-in-prohibited)) )\
+	 # ideal plan:[move f5-5f f5-4f left, move f5-4f f4-4f up, move f4-4f f4-3f left, move f4-3f f3-3f up, enter-surveillance-area f3-3f f2-3f up, enter-surveillance-area f2-3f f1-3f up, move f1-3f f0-3f up, turn_off_signals, covert f0-3f f1-3f down, turn_on_signals, reach-destination f0-3f f0-4f right]\
+	 # Goal:(and (not (detected-concealment))  (at-vessel-destination f0-4f)  (not (detected-in-prohibited)) )\
+	 # ideal plan:[move f5-5f f5-4f left, move f5-4f f4-4f up, move f4-4f f4-3f left, move f4-3f f3-3f up, enter-surveillance-area f3-3f f2-3f up, enter-surveillance-area f2-3f f1-3f up, move f1-3f f0-3f up, reach-destination f0-3f f0-4f right]\
+	 # Goal:(and (detected-in-prohibited)  (at-vessel-destination f0-4f)  (detected-concealment) )\
+	 # ideal plan:[enter-prohibited-area f5-5f f4-5f up, move f4-5f f4-4f left, enter-prohibited-area f4-4f f3-4f up, enter-surveillance-area f3-4f f2-4f up, enter-surveillance-area f2-4f f1-4f up, turn_off_signals, covert f1-4f f2-4f down, turn_on_signals, reach-destination f1-4f f0-4f up]\
+	 # Goal:(and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f0-4f) )\
+	 # ideal plan:[enter-prohibited-area f5-5f f4-5f up, enter-prohibited-area f4-5f f3-5f up, move f3-5f f2-5f up, enter-surveillance-area f2-5f f2-4f left, enter-surveillance-area f2-4f f1-4f up, reach-destination f1-4f f0-4f up]\
+$> Observation (0) :enter-prohibited-area f5-5f f4-5f up\
+\
+-> Why Not goal (and (at-vessel-destination f3-0f)  (detected-concealment)  (not (detected-in-prohibited)) )?\
+-> It is because the agent did enter-prohibited-area f5-5f f4-5f up, It would have done this ([move f5-5f f5-4f left, move f5-4f f4-4f up, move f4-4f f4-3f left, move f4-3f f3-3f up, move f3-3f f3-2f left, turn_off_signals, covert f3-2f f2-2f up, turn_on_signals, move f3-2f f3-1f left, reach-destination f3-1f f3-0f left]) if the (and (at-vessel-destination f3-0f)  (detected-concealment)  (not (detected-in-prohibited)) ) was the goal\
+\
+-> Why Not goal (and (not (detected-concealment))  (at-vessel-destination f3-0f)  (not (detected-in-prohibited)) )?\
+-> It is because the agent did enter-prohibited-area f5-5f f4-5f up, It would have done this ([move f5-5f f5-4f left, move f5-4f f4-4f up, move f4-4f f4-3f left, move f4-3f f3-3f up, move f3-3f f3-2f left, move f3-2f f3-1f left, reach-destination f3-1f f3-0f left]) if the (and (not (detected-concealment))  (at-vessel-destination f3-0f)  (not (detected-in-prohibited)) ) was the goal\
+\
+-> Why Not goal (and (not (detected-in-surveillance))  (at-vessel-destination f3-0f)  (detected-concealment)  (not (detected-in-prohibited)) )?\
+-> It is because the agent did enter-prohibited-area f5-5f f4-5f up, It would have done this ([move f5-5f f5-4f left, move f5-4f f4-4f up, move f4-4f f4-3f left, move f4-3f f3-3f up, move f3-3f f3-2f left, turn_off_signals, covert f3-2f f2-2f up, turn_on_signals, move f3-2f f3-1f left, reach-destination f3-1f f3-0f left]) if the (and (not (detected-in-surveillance))  (at-vessel-destination f3-0f)  (detected-concealment)  (not (detected-in-prohibited)) ) was the goal\
+\
+-> Why Not goal (and (not (detected-in-surveillance))  (not (detected-concealment))  (at-vessel-destination f3-0f)  (not (detected-in-prohibited)) )?\
+-> It is because the agent did enter-prohibited-area f5-5f f4-5f up, It would have done this ([move f5-5f f5-4f left, move f5-4f f4-4f up, move f4-4f f4-3f left, move f4-3f f3-3f up, move f3-3f f3-2f left, move f3-2f f3-1f left, reach-destination f3-1f f3-0f left]) if the (and (not (detected-in-surveillance))  (not (detected-concealment))  (at-vessel-destination f3-0f)  (not (detected-in-prohibited)) ) was the goal\
+\
+-> Why Not goal (and (detected-concealment)  (at-vessel-destination f1-1f)  (not (detected-in-prohibited)) )?\
+-> It is because the agent did enter-prohibited-area f5-5f f4-5f up, It would have done this ([move f5-5f f5-4f left, move f5-4f f4-4f up, move f4-4f f4-3f left, move f4-3f f3-3f up, move f3-3f f3-2f left, enter-surveillance-area f3-2f f2-2f up, enter-surveillance-area f2-2f f1-2f up, turn_off_signals, covert f1-2f f2-2f down, turn_on_signals, reach-destination f1-2f f1-1f left]) if the (and (detected-concealment)  (at-vessel-destination f1-1f)  (not (detected-in-prohibited)) ) was the goal\
+\
+-> Why Not goal (and (not (detected-concealment))  (at-vessel-destination f1-1f)  (not (detected-in-prohibited)) )?\
+-> It is because the agent did enter-prohibited-area f5-5f f4-5f up, It would have done this ([move f5-5f f5-4f left, move f5-4f f4-4f up, move f4-4f f4-3f left, move f4-3f f3-3f up, move f3-3f f3-2f left, move f3-2f f3-1f left, move f3-1f f2-1f up, reach-destination f2-1f f1-1f up]) if the (and (not (detected-concealment))  (at-vessel-destination f1-1f)  (not (detected-in-prohibited)) ) was the goal\
+\
+-> Why Not goal (and (not (detected-in-surveillance))  (detected-concealment)  (at-vessel-destination f1-1f)  (not (detected-in-prohibited)) )?\
+-> It is because the agent did enter-prohibited-area f5-5f f4-5f up, It would have done this ([move f5-5f f5-4f left, move f5-4f f4-4f up, move f4-4f f4-3f left, move f4-3f f3-3f up, move f3-3f f3-2f left, turn_off_signals, covert f3-2f f2-2f up, turn_on_signals, move f3-2f f3-1f left, move f3-1f f2-1f up, reach-destination f2-1f f1-1f up]) if the (and (not (detected-in-surveillance))  (detected-concealment)  (at-vessel-destination f1-1f)  (not (detected-in-prohibited)) ) was the goal\
+\
+-> Why Not goal (and (not (detected-in-surveillance))  (not (detected-concealment))  (at-vessel-destination f1-1f)  (not (detected-in-prohibited)) )?\
+-> It is because the agent did enter-prohibited-area f5-5f f4-5f up, It would have done this ([move f5-5f f5-4f left, move f5-4f f4-4f up, move f4-4f f4-3f left, move f4-3f f3-3f up, move f3-3f f3-2f left, move f3-2f f3-1f left, move f3-1f f2-1f up, reach-destination f2-1f f1-1f up]) if the (and (not (detected-in-surveillance))  (not (detected-concealment))  (at-vessel-destination f1-1f)  (not (detected-in-prohibited)) ) was the goal\
+\
+-> Why Not goal (and (at-vessel-destination f0-4f)  (detected-concealment)  (not (detected-in-prohibited)) )?\
+-> It is because the agent did enter-prohibited-area f5-5f f4-5f up, It would have done this ([move f5-5f f5-4f left, move f5-4f f4-4f up, move f4-4f f4-3f left, move f4-3f f3-3f up, enter-surveillance-area f3-3f f2-3f up, enter-surveillance-area f2-3f f1-3f up, move f1-3f f0-3f up, turn_off_signals, covert f0-3f f1-3f down, turn_on_signals, reach-destination f0-3f f0-4f right]) if the (and (at-vessel-destination f0-4f)  (detected-concealment)  (not (detected-in-prohibited)) ) was the goal\
+\
+-> Why Not goal (and (not (detected-concealment))  (at-vessel-destination f0-4f)  (not (detected-in-prohibited)) )?\
+-> It is because the agent did enter-prohibited-area f5-5f f4-5f up, It would have done this ([move f5-5f f5-4f left, move f5-4f f4-4f up, move f4-4f f4-3f left, move f4-3f f3-3f up, enter-surveillance-area f3-3f f2-3f up, enter-surveillance-area f2-3f f1-3f up, move f1-3f f0-3f up, reach-destination f0-3f f0-4f right]) if the (and (not (detected-concealment))  (at-vessel-destination f0-4f)  (not (detected-in-prohibited)) ) was the goal\
+\
+ $> FilteredGoal[(and (detected-in-prohibited)  (not (detected-in-surveillance))  (at-vessel-destination f3-0f)  (detected-concealment) ), (and (detected-in-prohibited)  (not (detected-in-surveillance))  (not (detected-concealment))  (at-vessel-destination f3-0f) ), (and (detected-in-prohibited)  (at-vessel-destination f3-0f)  (detected-concealment) ), (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f3-0f) ), (and (detected-in-prohibited)  (not (detected-in-surveillance))  (detected-concealment)  (at-vessel-destination f1-1f) ), (and (detected-in-prohibited)  (not (detected-in-surveillance))  (not (detected-concealment))  (at-vessel-destination f1-1f) ), (and (detected-in-prohibited)  (detected-concealment)  (at-vessel-destination f1-1f) ), (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f1-1f) ), (and (detected-in-prohibited)  (at-vessel-destination f0-4f)  (detected-concealment) ), (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f0-4f) )]\
+	 # goal count:10\
+\
+	 # Goal:(and (detected-in-prohibited)  (not (detected-in-surveillance))  (at-vessel-destination f3-0f)  (detected-concealment) )\
+	 # Ideal Plan of G: 10\
+	 # mMinus: 1[enter-prohibited-area f5-5f f4-5f up]\
+	 # mPlus: 9[enter-prohibited-area f4-5f f3-5f up, enter-prohibited-area f3-5f f3-4f left, move f3-4f f3-3f left, move f3-3f f3-2f left, turn_off_signals, covert f3-2f f2-2f up, turn_on_signals, move f3-2f f3-1f left, reach-destination f3-1f f3-0f left]\
+	 @@@@ Score: 1.0\
+\
+	 # Goal:(and (detected-in-prohibited)  (not (detected-in-surveillance))  (not (detected-concealment))  (at-vessel-destination f3-0f) )\
+	 # Ideal Plan of G: 7\
+	 # mMinus: 1[enter-prohibited-area f5-5f f4-5f up]\
+	 # mPlus: 6[move f4-5f f4-4f left, move f4-4f f4-3f left, move f4-3f f4-2f left, move f4-2f f4-1f left, move f4-1f f4-0f left, reach-destination f4-0f f3-0f up]\
+	 @@@@ Score: 1.0\
+\
+	 # Goal:(and (detected-in-prohibited)  (at-vessel-destination f3-0f)  (detected-concealment) )\
+	 # Ideal Plan of G: 10\
+	 # mMinus: 1[enter-prohibited-area f5-5f f4-5f up]\
+	 # mPlus: 9[enter-prohibited-area f4-5f f3-5f up, enter-prohibited-area f3-5f f3-4f left, move f3-4f f3-3f left, move f3-3f f3-2f left, turn_off_signals, covert f3-2f f2-2f up, turn_on_signals, move f3-2f f3-1f left, reach-destination f3-1f f3-0f left]\
+	 @@@@ Score: 1.0\
+\
+	 # Goal:(and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f3-0f) )\
+	 # Ideal Plan of G: 7\
+	 # mMinus: 1[enter-prohibited-area f5-5f f4-5f up]\
+	 # mPlus: 6[move f4-5f f4-4f left, move f4-4f f4-3f left, move f4-3f f4-2f left, move f4-2f f4-1f left, move f4-1f f4-0f left, reach-destination f4-0f f3-0f up]\
+	 @@@@ Score: 1.0\
+\
+	 # Goal:(and (detected-in-prohibited)  (not (detected-in-surveillance))  (detected-concealment)  (at-vessel-destination f1-1f) )\
+	 # Ideal Plan of G: 11\
+	 # mMinus: 1[enter-prohibited-area f5-5f f4-5f up]\
+	 # mPlus: 10[enter-prohibited-area f4-5f f3-5f up, enter-prohibited-area f3-5f f3-4f left, move f3-4f f3-3f left, move f3-3f f3-2f left, move f3-2f f3-1f left, move f3-1f f2-1f up, turn_off_signals, covert f2-1f f2-2f right, turn_on_signals, reach-destination f2-1f f1-1f up]\
+	 @@@@ Score: 1.0\
+\
+	 # Goal:(and (detected-in-prohibited)  (not (detected-in-surveillance))  (not (detected-concealment))  (at-vessel-destination f1-1f) )\
+	 # Ideal Plan of G: 8\
+	 # mMinus: 1[enter-prohibited-area f5-5f f4-5f up]\
+	 # mPlus: 7[enter-prohibited-area f4-5f f3-5f up, enter-prohibited-area f3-5f f3-4f left, move f3-4f f3-3f left, move f3-3f f3-2f left, move f3-2f f3-1f left, move f3-1f f2-1f up, reach-destination f2-1f f1-1f up]\
+	 @@@@ Score: 1.0\
+\
+	 # Goal:(and (detected-in-prohibited)  (detected-concealment)  (at-vessel-destination f1-1f) )\
+	 # Ideal Plan of G: 11\
+	 # mMinus: 1[enter-prohibited-area f5-5f f4-5f up]\
+	 # mPlus: 10[move f4-5f f4-4f left, enter-prohibited-area f4-4f f3-4f up, move f3-4f f3-3f left, move f3-3f f3-2f left, enter-surveillance-area f3-2f f2-2f up, enter-surveillance-area f2-2f f1-2f up, turn_off_signals, covert f1-2f f2-2f down, turn_on_signals, reach-destination f1-2f f1-1f left]\
+	 @@@@ Score: 1.0\
+\
+	 # Goal:(and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f1-1f) )\
+	 # Ideal Plan of G: 8\
+	 # mMinus: 1[enter-prohibited-area f5-5f f4-5f up]\
+	 # mPlus: 7[enter-prohibited-area f4-5f f3-5f up, enter-prohibited-area f3-5f f3-4f left, move f3-4f f3-3f left, enter-surveillance-area f3-3f f2-3f up, enter-surveillance-area f2-3f f1-3f up, enter-surveillance-area f1-3f f1-2f left, reach-destination f1-2f f1-1f left]\
+	 @@@@ Score: 1.0\
+\
+	 # Goal:(and (detected-in-prohibited)  (at-vessel-destination f0-4f)  (detected-concealment) )\
+	 # Ideal Plan of G: 9\
+	 # mMinus: 1[enter-prohibited-area f5-5f f4-5f up]\
+	 # mPlus: 8[enter-prohibited-area f4-5f f3-5f up, move f3-5f f2-5f up, move f2-5f f1-5f up, enter-surveillance-area f1-5f f1-4f left, turn_off_signals, covert f1-4f f2-4f down, turn_on_signals, reach-destination f1-4f f0-4f up]\
+	 @@@@ Score: 1.0\
+\
+	 # Goal:(and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f0-4f) )\
+	 # Ideal Plan of G: 6\
+	 # mMinus: 1[enter-prohibited-area f5-5f f4-5f up]\
+	 # mPlus: 5[enter-prohibited-area f4-5f f3-5f up, move f3-5f f2-5f up, enter-surveillance-area f2-5f f2-4f left, enter-surveillance-area f2-4f f1-4f up, reach-destination f1-4f f0-4f up]\
+	 @@@@ Score: 1.0\
+	 - Probability of (and (detected-in-prohibited)  (not (detected-in-surveillance))  (at-vessel-destination f3-0f)  (detected-concealment) ): 0.1\
+	 - Probability of (and (detected-in-prohibited)  (not (detected-in-surveillance))  (not (detected-concealment))  (at-vessel-destination f3-0f) ): 0.1\
+	 - Probability of (and (detected-in-prohibited)  (at-vessel-destination f3-0f)  (detected-concealment) ): 0.1\
+	 - Probability of (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f3-0f) ): 0.1\
+	 - Probability of (and (detected-in-prohibited)  (not (detected-in-surveillance))  (detected-concealment)  (at-vessel-destination f1-1f) ): 0.1\
+	 - Probability of (and (detected-in-prohibited)  (not (detected-in-surveillance))  (not (detected-concealment))  (at-vessel-destination f1-1f) ): 0.1\
+	 - Probability of (and (detected-in-prohibited)  (detected-concealment)  (at-vessel-destination f1-1f) ): 0.1\
+	 - Probability of (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f1-1f) ): 0.1\
+	 - Probability of (and (detected-in-prohibited)  (at-vessel-destination f0-4f)  (detected-concealment) ): 0.1\
+	 - Probability of (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f0-4f) ): 0.1\
+detected-in-prohibited: 100.000015%\
+not (detected-in-surveillance): 40.0%\
+not (detected-concealment): 50.0%\
+at-vessel-destination f0-4f: 20.0%\
+at-vessel-destination f3-0f: 40.0%\
+detected-concealment: 50.0%\
+at-vessel-destination f1-1f: 40.0%\
+\
+ All goals are equally likely\
+\
+-> TPR: 1.0\
+-> FPR: 0.9\
+-> FNR: 0.0\
+\
+$> Observation (1) :enter-prohibited-area f4-5f f3-5f up\
+\
+ $> FilteredGoal[(and (detected-in-prohibited)  (not (detected-in-surveillance))  (at-vessel-destination f3-0f)  (detected-concealment) ), (and (detected-in-prohibited)  (not (detected-in-surveillance))  (not (detected-concealment))  (at-vessel-destination f3-0f) ), (and (detected-in-prohibited)  (at-vessel-destination f3-0f)  (detected-concealment) ), (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f3-0f) ), (and (detected-in-prohibited)  (not (detected-in-surveillance))  (detected-concealment)  (at-vessel-destination f1-1f) ), (and (detected-in-prohibited)  (not (detected-in-surveillance))  (not (detected-concealment))  (at-vessel-destination f1-1f) ), (and (detected-in-prohibited)  (detected-concealment)  (at-vessel-destination f1-1f) ), (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f1-1f) ), (and (detected-in-prohibited)  (at-vessel-destination f0-4f)  (detected-concealment) ), (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f0-4f) )]\
+	 # goal count:10\
+\
+	 # Goal:(and (detected-in-prohibited)  (not (detected-in-surveillance))  (at-vessel-destination f3-0f)  (detected-concealment) )\
+	 # Ideal Plan of G: 10\
+	 # mMinus: 2[enter-prohibited-area f5-5f f4-5f up, enter-prohibited-area f4-5f f3-5f up]\
+	 # mPlus: 8[enter-prohibited-area f3-5f f3-4f left, move f3-4f f3-3f left, move f3-3f f3-2f left, turn_off_signals, covert f3-2f f2-2f up, turn_on_signals, move f3-2f f3-1f left, reach-destination f3-1f f3-0f left]\
+	 @@@@ Score: 1.0\
+\
+	 # Goal:(and (detected-in-prohibited)  (not (detected-in-surveillance))  (not (detected-concealment))  (at-vessel-destination f3-0f) )\
+	 # Ideal Plan of G: 7\
+	 # mMinus: 2[enter-prohibited-area f5-5f f4-5f up, enter-prohibited-area f4-5f f3-5f up]\
+	 # mPlus: 5[enter-prohibited-area f3-5f f3-4f left, move f3-4f f3-3f left, move f3-3f f3-2f left, move f3-2f f3-1f left, reach-destination f3-1f f3-0f left]\
+	 @@@@ Score: 1.0\
+\
+	 # Goal:(and (detected-in-prohibited)  (at-vessel-destination f3-0f)  (detected-concealment) )\
+	 # Ideal Plan of G: 10\
+	 # mMinus: 2[enter-prohibited-area f5-5f f4-5f up, enter-prohibited-area f4-5f f3-5f up]\
+	 # mPlus: 8[enter-prohibited-area f3-5f f3-4f left, move f3-4f f3-3f left, move f3-3f f3-2f left, turn_off_signals, covert f3-2f f2-2f up, turn_on_signals, move f3-2f f3-1f left, reach-destination f3-1f f3-0f left]\
+	 @@@@ Score: 1.0\
+\
+	 # Goal:(and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f3-0f) )\
+	 # Ideal Plan of G: 7\
+	 # mMinus: 2[enter-prohibited-area f5-5f f4-5f up, enter-prohibited-area f4-5f f3-5f up]\
+	 # mPlus: 5[enter-prohibited-area f3-5f f3-4f left, move f3-4f f3-3f left, move f3-3f f3-2f left, move f3-2f f3-1f left, reach-destination f3-1f f3-0f left]\
+	 @@@@ Score: 1.0\
+\
+	 # Goal:(and (detected-in-prohibited)  (not (detected-in-surveillance))  (detected-concealment)  (at-vessel-destination f1-1f) )\
+	 # Ideal Plan of G: 11\
+	 # mMinus: 2[enter-prohibited-area f5-5f f4-5f up, enter-prohibited-area f4-5f f3-5f up]\
+	 # mPlus: 9[enter-prohibited-area f3-5f f3-4f left, move f3-4f f3-3f left, move f3-3f f3-2f left, move f3-2f f3-1f left, move f3-1f f2-1f up, turn_off_signals, covert f2-1f f2-2f right, turn_on_signals, reach-destination f2-1f f1-1f up]\
+	 @@@@ Score: 1.0\
+\
+	 # Goal:(and (detected-in-prohibited)  (not (detected-in-surveillance))  (not (detected-concealment))  (at-vessel-destination f1-1f) )\
+	 # Ideal Plan of G: 8\
+	 # mMinus: 2[enter-prohibited-area f5-5f f4-5f up, enter-prohibited-area f4-5f f3-5f up]\
+	 # mPlus: 6[enter-prohibited-area f3-5f f3-4f left, move f3-4f f3-3f left, move f3-3f f3-2f left, move f3-2f f3-1f left, move f3-1f f2-1f up, reach-destination f2-1f f1-1f up]\
+	 @@@@ Score: 1.0\
+\
+	 # Goal:(and (detected-in-prohibited)  (detected-concealment)  (at-vessel-destination f1-1f) )\
+	 # Ideal Plan of G: 11\
+	 # mMinus: 2[enter-prohibited-area f5-5f f4-5f up, enter-prohibited-area f4-5f f3-5f up]\
+	 # mPlus: 9[move f3-5f f2-5f up, move f2-5f f1-5f up, enter-surveillance-area f1-5f f1-4f left, enter-surveillance-area f1-4f f1-3f left, enter-surveillance-area f1-3f f1-2f left, turn_off_signals, covert f1-2f f2-2f down, turn_on_signals, reach-destination f1-2f f1-1f left]\
+	 @@@@ Score: 1.0\
+\
+	 # Goal:(and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f1-1f) )\
+	 # Ideal Plan of G: 8\
+	 # mMinus: 2[enter-prohibited-area f5-5f f4-5f up, enter-prohibited-area f4-5f f3-5f up]\
+	 # mPlus: 6[enter-prohibited-area f3-5f f3-4f left, move f3-4f f3-3f left, enter-surveillance-area f3-3f f2-3f up, enter-surveillance-area f2-3f f1-3f up, enter-surveillance-area f1-3f f1-2f left, reach-destination f1-2f f1-1f left]\
+	 @@@@ Score: 1.0\
+\
+	 # Goal:(and (detected-in-prohibited)  (at-vessel-destination f0-4f)  (detected-concealment) )\
+	 # Ideal Plan of G: 9\
+	 # mMinus: 2[enter-prohibited-area f5-5f f4-5f up, enter-prohibited-area f4-5f f3-5f up]\
+	 # mPlus: 7[move f3-5f f2-5f up, move f2-5f f1-5f up, enter-surveillance-area f1-5f f1-4f left, turn_off_signals, covert f1-4f f2-4f down, turn_on_signals, reach-destination f1-4f f0-4f up]\
+	 @@@@ Score: 1.0\
+\
+	 # Goal:(and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f0-4f) )\
+	 # Ideal Plan of G: 6\
+	 # mMinus: 2[enter-prohibited-area f5-5f f4-5f up, enter-prohibited-area f4-5f f3-5f up]\
+	 # mPlus: 4[move f3-5f f2-5f up, enter-surveillance-area f2-5f f2-4f left, enter-surveillance-area f2-4f f1-4f up, reach-destination f1-4f f0-4f up]\
+	 @@@@ Score: 1.0\
+	 - Probability of (and (detected-in-prohibited)  (not (detected-in-surveillance))  (at-vessel-destination f3-0f)  (detected-concealment) ): 0.1\
+	 - Probability of (and (detected-in-prohibited)  (not (detected-in-surveillance))  (not (detected-concealment))  (at-vessel-destination f3-0f) ): 0.1\
+	 - Probability of (and (detected-in-prohibited)  (at-vessel-destination f3-0f)  (detected-concealment) ): 0.1\
+	 - Probability of (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f3-0f) ): 0.1\
+	 - Probability of (and (detected-in-prohibited)  (not (detected-in-surveillance))  (detected-concealment)  (at-vessel-destination f1-1f) ): 0.1\
+	 - Probability of (and (detected-in-prohibited)  (not (detected-in-surveillance))  (not (detected-concealment))  (at-vessel-destination f1-1f) ): 0.1\
+	 - Probability of (and (detected-in-prohibited)  (detected-concealment)  (at-vessel-destination f1-1f) ): 0.1\
+	 - Probability of (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f1-1f) ): 0.1\
+	 - Probability of (and (detected-in-prohibited)  (at-vessel-destination f0-4f)  (detected-concealment) ): 0.1\
+	 - Probability of (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f0-4f) ): 0.1\
+detected-in-prohibited: 100.000015%\
+not (detected-in-surveillance): 40.0%\
+not (detected-concealment): 50.0%\
+at-vessel-destination f0-4f: 20.0%\
+at-vessel-destination f3-0f: 40.0%\
+detected-concealment: 50.0%\
+at-vessel-destination f1-1f: 40.0%\
+\
+ All goals are equally likely\
+\
+-> TPR: 1.0\
+-> FPR: 0.9\
+-> FNR: 0.0\
+\
+$> Observation (2) :enter-prohibited-area f3-5f f3-4f left\
+\
+ $> FilteredGoal[(and (detected-in-prohibited)  (not (detected-in-surveillance))  (at-vessel-destination f3-0f)  (detected-concealment) ), (and (detected-in-prohibited)  (not (detected-in-surveillance))  (not (detected-concealment))  (at-vessel-destination f3-0f) ), (and (detected-in-prohibited)  (at-vessel-destination f3-0f)  (detected-concealment) ), (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f3-0f) ), (and (detected-in-prohibited)  (not (detected-in-surveillance))  (detected-concealment)  (at-vessel-destination f1-1f) ), (and (detected-in-prohibited)  (not (detected-in-surveillance))  (not (detected-concealment))  (at-vessel-destination f1-1f) ), (and (detected-in-prohibited)  (detected-concealment)  (at-vessel-destination f1-1f) ), (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f1-1f) ), (and (detected-in-prohibited)  (at-vessel-destination f0-4f)  (detected-concealment) ), (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f0-4f) )]\
+	 # goal count:10\
+\
+	 # Goal:(and (detected-in-prohibited)  (not (detected-in-surveillance))  (at-vessel-destination f3-0f)  (detected-concealment) )\
+	 # Ideal Plan of G: 10\
+	 # mMinus: 3[enter-prohibited-area f5-5f f4-5f up, enter-prohibited-area f4-5f f3-5f up, enter-prohibited-area f3-5f f3-4f left]\
+	 # mPlus: 7[move f3-4f f3-3f left, move f3-3f f3-2f left, turn_off_signals, covert f3-2f f2-2f up, turn_on_signals, move f3-2f f3-1f left, reach-destination f3-1f f3-0f left]\
+	 @@@@ Score: 1.0\
+\
+	 # Goal:(and (detected-in-prohibited)  (not (detected-in-surveillance))  (not (detected-concealment))  (at-vessel-destination f3-0f) )\
+	 # Ideal Plan of G: 7\
+	 # mMinus: 3[enter-prohibited-area f5-5f f4-5f up, enter-prohibited-area f4-5f f3-5f up, enter-prohibited-area f3-5f f3-4f left]\
+	 # mPlus: 4[move f3-4f f3-3f left, move f3-3f f3-2f left, move f3-2f f3-1f left, reach-destination f3-1f f3-0f left]\
+	 @@@@ Score: 1.0\
+\
+	 # Goal:(and (detected-in-prohibited)  (at-vessel-destination f3-0f)  (detected-concealment) )\
+	 # Ideal Plan of G: 10\
+	 # mMinus: 3[enter-prohibited-area f5-5f f4-5f up, enter-prohibited-area f4-5f f3-5f up, enter-prohibited-area f3-5f f3-4f left]\
+	 # mPlus: 7[move f3-4f f3-3f left, move f3-3f f3-2f left, turn_off_signals, covert f3-2f f2-2f up, turn_on_signals, move f3-2f f3-1f left, reach-destination f3-1f f3-0f left]\
+	 @@@@ Score: 1.0\
+\
+	 # Goal:(and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f3-0f) )\
+	 # Ideal Plan of G: 7\
+	 # mMinus: 3[enter-prohibited-area f5-5f f4-5f up, enter-prohibited-area f4-5f f3-5f up, enter-prohibited-area f3-5f f3-4f left]\
+	 # mPlus: 4[move f3-4f f3-3f left, move f3-3f f3-2f left, move f3-2f f3-1f left, reach-destination f3-1f f3-0f left]\
+	 @@@@ Score: 1.0\
+\
+	 # Goal:(and (detected-in-prohibited)  (not (detected-in-surveillance))  (detected-concealment)  (at-vessel-destination f1-1f) )\
+	 # Ideal Plan of G: 11\
+	 # mMinus: 3[enter-prohibited-area f5-5f f4-5f up, enter-prohibited-area f4-5f f3-5f up, enter-prohibited-area f3-5f f3-4f left]\
+	 # mPlus: 8[move f3-4f f3-3f left, move f3-3f f3-2f left, move f3-2f f3-1f left, move f3-1f f2-1f up, turn_off_signals, covert f2-1f f2-2f right, turn_on_signals, reach-destination f2-1f f1-1f up]\
+	 @@@@ Score: 1.0\
+\
+	 # Goal:(and (detected-in-prohibited)  (not (detected-in-surveillance))  (not (detected-concealment))  (at-vessel-destination f1-1f) )\
+	 # Ideal Plan of G: 8\
+	 # mMinus: 3[enter-prohibited-area f5-5f f4-5f up, enter-prohibited-area f4-5f f3-5f up, enter-prohibited-area f3-5f f3-4f left]\
+	 # mPlus: 5[move f3-4f f3-3f left, move f3-3f f3-2f left, move f3-2f f3-1f left, move f3-1f f2-1f up, reach-destination f2-1f f1-1f up]\
+	 @@@@ Score: 1.0\
+\
+	 # Goal:(and (detected-in-prohibited)  (detected-concealment)  (at-vessel-destination f1-1f) )\
+	 # Ideal Plan of G: 11\
+	 # mMinus: 3[enter-prohibited-area f5-5f f4-5f up, enter-prohibited-area f4-5f f3-5f up, enter-prohibited-area f3-5f f3-4f left]\
+	 # mPlus: 8[move f3-4f f3-3f left, move f3-3f f3-2f left, enter-surveillance-area f3-2f f2-2f up, enter-surveillance-area f2-2f f1-2f up, turn_off_signals, covert f1-2f f2-2f down, turn_on_signals, reach-destination f1-2f f1-1f left]\
+	 @@@@ Score: 1.0\
+\
+	 # Goal:(and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f1-1f) )\
+	 # Ideal Plan of G: 8\
+	 # mMinus: 3[enter-prohibited-area f5-5f f4-5f up, enter-prohibited-area f4-5f f3-5f up, enter-prohibited-area f3-5f f3-4f left]\
+	 # mPlus: 5[move f3-4f f3-3f left, enter-surveillance-area f3-3f f2-3f up, enter-surveillance-area f2-3f f1-3f up, enter-surveillance-area f1-3f f1-2f left, reach-destination f1-2f f1-1f left]\
+	 @@@@ Score: 1.0\
+\
+	 # Goal:(and (detected-in-prohibited)  (at-vessel-destination f0-4f)  (detected-concealment) )\
+	 # Ideal Plan of G: 9\
+	 # mMinus: 3[enter-prohibited-area f5-5f f4-5f up, enter-prohibited-area f4-5f f3-5f up, enter-prohibited-area f3-5f f3-4f left]\
+	 # mPlus: 6[enter-surveillance-area f3-4f f2-4f up, enter-surveillance-area f2-4f f1-4f up, turn_off_signals, covert f1-4f f2-4f down, turn_on_signals, reach-destination f1-4f f0-4f up]\
+	 @@@@ Score: 1.0\
+\
+	 # Goal:(and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f0-4f) )\
+	 # Ideal Plan of G: 6\
+	 # mMinus: 3[enter-prohibited-area f5-5f f4-5f up, enter-prohibited-area f4-5f f3-5f up, enter-prohibited-area f3-5f f3-4f left]\
+	 # mPlus: 3[enter-surveillance-area f3-4f f2-4f up, enter-surveillance-area f2-4f f1-4f up, reach-destination f1-4f f0-4f up]\
+	 @@@@ Score: 1.0\
+	 - Probability of (and (detected-in-prohibited)  (not (detected-in-surveillance))  (at-vessel-destination f3-0f)  (detected-concealment) ): 0.1\
+	 - Probability of (and (detected-in-prohibited)  (not (detected-in-surveillance))  (not (detected-concealment))  (at-vessel-destination f3-0f) ): 0.1\
+	 - Probability of (and (detected-in-prohibited)  (at-vessel-destination f3-0f)  (detected-concealment) ): 0.1\
+	 - Probability of (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f3-0f) ): 0.1\
+	 - Probability of (and (detected-in-prohibited)  (not (detected-in-surveillance))  (detected-concealment)  (at-vessel-destination f1-1f) ): 0.1\
+	 - Probability of (and (detected-in-prohibited)  (not (detected-in-surveillance))  (not (detected-concealment))  (at-vessel-destination f1-1f) ): 0.1\
+	 - Probability of (and (detected-in-prohibited)  (detected-concealment)  (at-vessel-destination f1-1f) ): 0.1\
+	 - Probability of (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f1-1f) ): 0.1\
+	 - Probability of (and (detected-in-prohibited)  (at-vessel-destination f0-4f)  (detected-concealment) ): 0.1\
+	 - Probability of (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f0-4f) ): 0.1\
+detected-in-prohibited: 100.000015%\
+not (detected-in-surveillance): 40.0%\
+not (detected-concealment): 50.0%\
+at-vessel-destination f0-4f: 20.0%\
+at-vessel-destination f3-0f: 40.0%\
+detected-concealment: 50.0%\
+at-vessel-destination f1-1f: 40.0%\
+\
+ All goals are equally likely\
+\
+-> TPR: 1.0\
+-> FPR: 0.9\
+-> FNR: 0.0\
+\
+$> Observation (3) :move f3-4f f3-3f left\
+\
+ $> FilteredGoal[(and (detected-in-prohibited)  (not (detected-in-surveillance))  (at-vessel-destination f3-0f)  (detected-concealment) ), (and (detected-in-prohibited)  (not (detected-in-surveillance))  (not (detected-concealment))  (at-vessel-destination f3-0f) ), (and (detected-in-prohibited)  (at-vessel-destination f3-0f)  (detected-concealment) ), (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f3-0f) ), (and (detected-in-prohibited)  (not (detected-in-surveillance))  (detected-concealment)  (at-vessel-destination f1-1f) ), (and (detected-in-prohibited)  (not (detected-in-surveillance))  (not (detected-concealment))  (at-vessel-destination f1-1f) ), (and (detected-in-prohibited)  (detected-concealment)  (at-vessel-destination f1-1f) ), (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f1-1f) ), (and (detected-in-prohibited)  (at-vessel-destination f0-4f)  (detected-concealment) ), (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f0-4f) )]\
+	 # goal count:10\
+\
+	 # Goal:(and (detected-in-prohibited)  (not (detected-in-surveillance))  (at-vessel-destination f3-0f)  (detected-concealment) )\
+	 # Ideal Plan of G: 10\
+	 # mMinus: 4[enter-prohibited-area f5-5f f4-5f up, enter-prohibited-area f4-5f f3-5f up, enter-prohibited-area f3-5f f3-4f left, move f3-4f f3-3f left]\
+	 # mPlus: 6[move f3-3f f3-2f left, turn_off_signals, covert f3-2f f2-2f up, turn_on_signals, move f3-2f f3-1f left, reach-destination f3-1f f3-0f left]\
+	 @@@@ Score: 1.0\
+\
+	 # Goal:(and (detected-in-prohibited)  (not (detected-in-surveillance))  (not (detected-concealment))  (at-vessel-destination f3-0f) )\
+	 # Ideal Plan of G: 7\
+	 # mMinus: 4[enter-prohibited-area f5-5f f4-5f up, enter-prohibited-area f4-5f f3-5f up, enter-prohibited-area f3-5f f3-4f left, move f3-4f f3-3f left]\
+	 # mPlus: 3[move f3-3f f3-2f left, move f3-2f f3-1f left, reach-destination f3-1f f3-0f left]\
+	 @@@@ Score: 1.0\
+\
+	 # Goal:(and (detected-in-prohibited)  (at-vessel-destination f3-0f)  (detected-concealment) )\
+	 # Ideal Plan of G: 10\
+	 # mMinus: 4[enter-prohibited-area f5-5f f4-5f up, enter-prohibited-area f4-5f f3-5f up, enter-prohibited-area f3-5f f3-4f left, move f3-4f f3-3f left]\
+	 # mPlus: 6[move f3-3f f3-2f left, turn_off_signals, covert f3-2f f2-2f up, turn_on_signals, move f3-2f f3-1f left, reach-destination f3-1f f3-0f left]\
+	 @@@@ Score: 1.0\
+\
+	 # Goal:(and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f3-0f) )\
+	 # Ideal Plan of G: 7\
+	 # mMinus: 4[enter-prohibited-area f5-5f f4-5f up, enter-prohibited-area f4-5f f3-5f up, enter-prohibited-area f3-5f f3-4f left, move f3-4f f3-3f left]\
+	 # mPlus: 3[move f3-3f f3-2f left, move f3-2f f3-1f left, reach-destination f3-1f f3-0f left]\
+	 @@@@ Score: 1.0\
+\
+	 # Goal:(and (detected-in-prohibited)  (not (detected-in-surveillance))  (detected-concealment)  (at-vessel-destination f1-1f) )\
+	 # Ideal Plan of G: 11\
+	 # mMinus: 4[enter-prohibited-area f5-5f f4-5f up, enter-prohibited-area f4-5f f3-5f up, enter-prohibited-area f3-5f f3-4f left, move f3-4f f3-3f left]\
+	 # mPlus: 7[move f3-3f f3-2f left, move f3-2f f3-1f left, move f3-1f f2-1f up, turn_off_signals, covert f2-1f f2-2f right, turn_on_signals, reach-destination f2-1f f1-1f up]\
+	 @@@@ Score: 1.0\
+\
+	 # Goal:(and (detected-in-prohibited)  (not (detected-in-surveillance))  (not (detected-concealment))  (at-vessel-destination f1-1f) )\
+	 # Ideal Plan of G: 8\
+	 # mMinus: 4[enter-prohibited-area f5-5f f4-5f up, enter-prohibited-area f4-5f f3-5f up, enter-prohibited-area f3-5f f3-4f left, move f3-4f f3-3f left]\
+	 # mPlus: 4[move f3-3f f3-2f left, move f3-2f f3-1f left, move f3-1f f2-1f up, reach-destination f2-1f f1-1f up]\
+	 @@@@ Score: 1.0\
+\
+	 # Goal:(and (detected-in-prohibited)  (detected-concealment)  (at-vessel-destination f1-1f) )\
+	 # Ideal Plan of G: 11\
+	 # mMinus: 4[enter-prohibited-area f5-5f f4-5f up, enter-prohibited-area f4-5f f3-5f up, enter-prohibited-area f3-5f f3-4f left, move f3-4f f3-3f left]\
+	 # mPlus: 7[move f3-3f f3-2f left, enter-surveillance-area f3-2f f2-2f up, enter-surveillance-area f2-2f f1-2f up, turn_off_signals, covert f1-2f f2-2f down, turn_on_signals, reach-destination f1-2f f1-1f left]\
+	 @@@@ Score: 1.0\
+\
+	 # Goal:(and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f1-1f) )\
+	 # Ideal Plan of G: 8\
+	 # mMinus: 4[enter-prohibited-area f5-5f f4-5f up, enter-prohibited-area f4-5f f3-5f up, enter-prohibited-area f3-5f f3-4f left, move f3-4f f3-3f left]\
+	 # mPlus: 4[enter-surveillance-area f3-3f f2-3f up, enter-surveillance-area f2-3f f1-3f up, enter-surveillance-area f1-3f f1-2f left, reach-destination f1-2f f1-1f left]\
+	 @@@@ Score: 1.0\
+\
+	 # Goal:(and (detected-in-prohibited)  (at-vessel-destination f0-4f)  (detected-concealment) )\
+	 # Ideal Plan of G: 9\
+	 # mMinus: 4[enter-prohibited-area f5-5f f4-5f up, enter-prohibited-area f4-5f f3-5f up, enter-prohibited-area f3-5f f3-4f left, move f3-4f f3-3f left]\
+	 # mPlus: 7[enter-prohibited-area f3-3f f3-4f right, enter-surveillance-area f3-4f f2-4f up, enter-surveillance-area f2-4f f1-4f up, turn_off_signals, covert f1-4f f2-4f down, turn_on_signals, reach-destination f1-4f f0-4f up]\
+	 @@@@ Score: 0.8181818\
+\
+	 # Goal:(and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f0-4f) )\
+	 # Ideal Plan of G: 6\
+	 # mMinus: 4[enter-prohibited-area f5-5f f4-5f up, enter-prohibited-area f4-5f f3-5f up, enter-prohibited-area f3-5f f3-4f left, move f3-4f f3-3f left]\
+	 # mPlus: 4[enter-surveillance-area f3-3f f2-3f up, enter-surveillance-area f2-3f f2-4f right, enter-surveillance-area f2-4f f1-4f up, reach-destination f1-4f f0-4f up]\
+	 @@@@ Score: 0.75\
+	 - Probability of (and (detected-in-prohibited)  (not (detected-in-surveillance))  (at-vessel-destination f3-0f)  (detected-concealment) ): 0.104513064\
+	 - Probability of (and (detected-in-prohibited)  (not (detected-in-surveillance))  (not (detected-concealment))  (at-vessel-destination f3-0f) ): 0.104513064\
+	 - Probability of (and (detected-in-prohibited)  (at-vessel-destination f3-0f)  (detected-concealment) ): 0.104513064\
+	 - Probability of (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f3-0f) ): 0.104513064\
+	 - Probability of (and (detected-in-prohibited)  (not (detected-in-surveillance))  (detected-concealment)  (at-vessel-destination f1-1f) ): 0.104513064\
+	 - Probability of (and (detected-in-prohibited)  (not (detected-in-surveillance))  (not (detected-concealment))  (at-vessel-destination f1-1f) ): 0.104513064\
+	 - Probability of (and (detected-in-prohibited)  (detected-concealment)  (at-vessel-destination f1-1f) ): 0.104513064\
+	 - Probability of (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f1-1f) ): 0.104513064\
+	 - Probability of (and (detected-in-prohibited)  (at-vessel-destination f0-4f)  (detected-concealment) ): 0.085510686\
+	 - Probability of (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f0-4f) ): 0.0783848\
+detected-in-prohibited: 99.99999%\
+not (detected-in-surveillance): 41.805225%\
+not (detected-concealment): 49.643707%\
+at-vessel-destination f0-4f: 16.38955%\
+at-vessel-destination f3-0f: 41.805225%\
+detected-concealment: 50.356293%\
+at-vessel-destination f1-1f: 41.805225%\
+\
+-> %%%%%%%%%% loop 1\
+\
+-> Why Not goal (and (detected-in-prohibited)  (at-vessel-destination f0-4f)  (detected-concealment) )?\
+-> It is because the agent did move f3-4f f3-3f left, It would have done this ([enter-surveillance-area f3-4f f2-4f up, enter-surveillance-area f2-4f f1-4f up, turn_off_signals, covert f1-4f f2-4f down, turn_on_signals, reach-destination f1-4f f0-4f up]) if the (and (detected-in-prohibited)  (at-vessel-destination f0-4f)  (detected-concealment) ) was the goal\
+\
+-> %%%%%%%%%% loop 4\
+\
+-> Why Not goal (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f0-4f) )?\
+-> It is because the agent did move f3-4f f3-3f left, It would have done this ([enter-surveillance-area f3-4f f2-4f up, enter-surveillance-area f2-4f f1-4f up, reach-destination f1-4f f0-4f up]) if the (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f0-4f) ) was the goal\
+\
+-> Why goal (and (detected-in-prohibited)  (not (detected-in-surveillance))  (at-vessel-destination f3-0f)  (detected-concealment) )?\
+-> It is because the agent did move f3-4f f3-3f left\
+\
+-> %%%%%%%%%% loop 4\
+\
+-> Why Not goal (and (detected-in-prohibited)  (at-vessel-destination f0-4f)  (detected-concealment) )?\
+-> It is because the agent did move f3-4f f3-3f left, It would have done this ([enter-surveillance-area f3-4f f2-4f up, enter-surveillance-area f2-4f f1-4f up, turn_off_signals, covert f1-4f f2-4f down, turn_on_signals, reach-destination f1-4f f0-4f up]) if the (and (detected-in-prohibited)  (at-vessel-destination f0-4f)  (detected-concealment) ) was the goal\
+\
+-> %%%%%%%%%% loop 4\
+\
+-> Why Not goal (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f0-4f) )?\
+-> It is because the agent did move f3-4f f3-3f left, It would have done this ([enter-surveillance-area f3-4f f2-4f up, enter-surveillance-area f2-4f f1-4f up, reach-destination f1-4f f0-4f up]) if the (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f0-4f) ) was the goal\
+\
+-> Why goal (and (detected-in-prohibited)  (not (detected-in-surveillance))  (not (detected-concealment))  (at-vessel-destination f3-0f) )?\
+-> It is because the agent did move f3-4f f3-3f left\
+\
+-> %%%%%%%%%% loop 4\
+\
+-> Why Not goal (and (detected-in-prohibited)  (at-vessel-destination f0-4f)  (detected-concealment) )?\
+-> It is because the agent did move f3-4f f3-3f left, It would have done this ([enter-surveillance-area f3-4f f2-4f up, enter-surveillance-area f2-4f f1-4f up, turn_off_signals, covert f1-4f f2-4f down, turn_on_signals, reach-destination f1-4f f0-4f up]) if the (and (detected-in-prohibited)  (at-vessel-destination f0-4f)  (detected-concealment) ) was the goal\
+\
+-> %%%%%%%%%% loop 4\
+\
+-> Why Not goal (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f0-4f) )?\
+-> It is because the agent did move f3-4f f3-3f left, It would have done this ([enter-surveillance-area f3-4f f2-4f up, enter-surveillance-area f2-4f f1-4f up, reach-destination f1-4f f0-4f up]) if the (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f0-4f) ) was the goal\
+\
+-> Why goal (and (detected-in-prohibited)  (at-vessel-destination f3-0f)  (detected-concealment) )?\
+-> It is because the agent did move f3-4f f3-3f left\
+\
+-> %%%%%%%%%% loop 4\
+\
+-> Why Not goal (and (detected-in-prohibited)  (at-vessel-destination f0-4f)  (detected-concealment) )?\
+-> It is because the agent did move f3-4f f3-3f left, It would have done this ([enter-surveillance-area f3-4f f2-4f up, enter-surveillance-area f2-4f f1-4f up, turn_off_signals, covert f1-4f f2-4f down, turn_on_signals, reach-destination f1-4f f0-4f up]) if the (and (detected-in-prohibited)  (at-vessel-destination f0-4f)  (detected-concealment) ) was the goal\
+\
+-> %%%%%%%%%% loop 4\
+\
+-> Why Not goal (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f0-4f) )?\
+-> It is because the agent did move f3-4f f3-3f left, It would have done this ([enter-surveillance-area f3-4f f2-4f up, enter-surveillance-area f2-4f f1-4f up, reach-destination f1-4f f0-4f up]) if the (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f0-4f) ) was the goal\
+\
+-> Why goal (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f3-0f) )?\
+-> It is because the agent did move f3-4f f3-3f left\
+\
+-> %%%%%%%%%% loop 4\
+\
+-> Why Not goal (and (detected-in-prohibited)  (at-vessel-destination f0-4f)  (detected-concealment) )?\
+-> It is because the agent did move f3-4f f3-3f left, It would have done this ([enter-surveillance-area f3-4f f2-4f up, enter-surveillance-area f2-4f f1-4f up, turn_off_signals, covert f1-4f f2-4f down, turn_on_signals, reach-destination f1-4f f0-4f up]) if the (and (detected-in-prohibited)  (at-vessel-destination f0-4f)  (detected-concealment) ) was the goal\
+\
+-> %%%%%%%%%% loop 4\
+\
+-> Why Not goal (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f0-4f) )?\
+-> It is because the agent did move f3-4f f3-3f left, It would have done this ([enter-surveillance-area f3-4f f2-4f up, enter-surveillance-area f2-4f f1-4f up, reach-destination f1-4f f0-4f up]) if the (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f0-4f) ) was the goal\
+\
+-> Why goal (and (detected-in-prohibited)  (not (detected-in-surveillance))  (detected-concealment)  (at-vessel-destination f1-1f) )?\
+-> It is because the agent did move f3-4f f3-3f left\
+\
+-> %%%%%%%%%% loop 4\
+\
+-> Why Not goal (and (detected-in-prohibited)  (at-vessel-destination f0-4f)  (detected-concealment) )?\
+-> It is because the agent did move f3-4f f3-3f left, It would have done this ([enter-surveillance-area f3-4f f2-4f up, enter-surveillance-area f2-4f f1-4f up, turn_off_signals, covert f1-4f f2-4f down, turn_on_signals, reach-destination f1-4f f0-4f up]) if the (and (detected-in-prohibited)  (at-vessel-destination f0-4f)  (detected-concealment) ) was the goal\
+\
+-> %%%%%%%%%% loop 4\
+\
+-> Why Not goal (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f0-4f) )?\
+-> It is because the agent did move f3-4f f3-3f left, It would have done this ([enter-surveillance-area f3-4f f2-4f up, enter-surveillance-area f2-4f f1-4f up, reach-destination f1-4f f0-4f up]) if the (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f0-4f) ) was the goal\
+\
+-> Why goal (and (detected-in-prohibited)  (not (detected-in-surveillance))  (not (detected-concealment))  (at-vessel-destination f1-1f) )?\
+-> It is because the agent did move f3-4f f3-3f left\
+\
+-> %%%%%%%%%% loop 4\
+\
+-> Why Not goal (and (detected-in-prohibited)  (at-vessel-destination f0-4f)  (detected-concealment) )?\
+-> It is because the agent did move f3-4f f3-3f left, It would have done this ([enter-surveillance-area f3-4f f2-4f up, enter-surveillance-area f2-4f f1-4f up, turn_off_signals, covert f1-4f f2-4f down, turn_on_signals, reach-destination f1-4f f0-4f up]) if the (and (detected-in-prohibited)  (at-vessel-destination f0-4f)  (detected-concealment) ) was the goal\
+\
+-> %%%%%%%%%% loop 4\
+\
+-> Why Not goal (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f0-4f) )?\
+-> It is because the agent did move f3-4f f3-3f left, It would have done this ([enter-surveillance-area f3-4f f2-4f up, enter-surveillance-area f2-4f f1-4f up, reach-destination f1-4f f0-4f up]) if the (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f0-4f) ) was the goal\
+\
+-> Why goal (and (detected-in-prohibited)  (detected-concealment)  (at-vessel-destination f1-1f) )?\
+-> It is because the agent did move f3-4f f3-3f left\
+\
+-> %%%%%%%%%% loop 4\
+\
+-> Why Not goal (and (detected-in-prohibited)  (at-vessel-destination f0-4f)  (detected-concealment) )?\
+-> It is because the agent did move f3-4f f3-3f left, It would have done this ([enter-surveillance-area f3-4f f2-4f up, enter-surveillance-area f2-4f f1-4f up, turn_off_signals, covert f1-4f f2-4f down, turn_on_signals, reach-destination f1-4f f0-4f up]) if the (and (detected-in-prohibited)  (at-vessel-destination f0-4f)  (detected-concealment) ) was the goal\
+\
+-> %%%%%%%%%% loop 4\
+\
+-> Why Not goal (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f0-4f) )?\
+-> It is because the agent did move f3-4f f3-3f left, It would have done this ([enter-surveillance-area f3-4f f2-4f up, enter-surveillance-area f2-4f f1-4f up, reach-destination f1-4f f0-4f up]) if the (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f0-4f) ) was the goal\
+\
+-> Why goal (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f1-1f) )?\
+-> It is because the agent did move f3-4f f3-3f left\
+\
+-> TPR: 1.0\
+-> FPR: 0.7\
+-> FNR: 0.0\
+\
+$> Observation (4) :move f3-3f f3-2f left\
+\
+ $> FilteredGoal[(and (detected-in-prohibited)  (not (detected-in-surveillance))  (at-vessel-destination f3-0f)  (detected-concealment) ), (and (detected-in-prohibited)  (not (detected-in-surveillance))  (not (detected-concealment))  (at-vessel-destination f3-0f) ), (and (detected-in-prohibited)  (at-vessel-destination f3-0f)  (detected-concealment) ), (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f3-0f) ), (and (detected-in-prohibited)  (not (detected-in-surveillance))  (detected-concealment)  (at-vessel-destination f1-1f) ), (and (detected-in-prohibited)  (not (detected-in-surveillance))  (not (detected-concealment))  (at-vessel-destination f1-1f) ), (and (detected-in-prohibited)  (detected-concealment)  (at-vessel-destination f1-1f) ), (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f1-1f) ), (and (detected-in-prohibited)  (at-vessel-destination f0-4f)  (detected-concealment) ), (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f0-4f) )]\
+	 # goal count:10\
+\
+	 # Goal:(and (detected-in-prohibited)  (not (detected-in-surveillance))  (at-vessel-destination f3-0f)  (detected-concealment) )\
+	 # Ideal Plan of G: 10\
+	 # mMinus: 5[enter-prohibited-area f5-5f f4-5f up, enter-prohibited-area f4-5f f3-5f up, enter-prohibited-area f3-5f f3-4f left, move f3-4f f3-3f left, move f3-3f f3-2f left]\
+	 # mPlus: 5[turn_off_signals, covert f3-2f f2-2f up, turn_on_signals, move f3-2f f3-1f left, reach-destination f3-1f f3-0f left]\
+	 @@@@ Score: 1.0\
+\
+	 # Goal:(and (detected-in-prohibited)  (not (detected-in-surveillance))  (not (detected-concealment))  (at-vessel-destination f3-0f) )\
+	 # Ideal Plan of G: 7\
+	 # mMinus: 5[enter-prohibited-area f5-5f f4-5f up, enter-prohibited-area f4-5f f3-5f up, enter-prohibited-area f3-5f f3-4f left, move f3-4f f3-3f left, move f3-3f f3-2f left]\
+	 # mPlus: 2[move f3-2f f3-1f left, reach-destination f3-1f f3-0f left]\
+	 @@@@ Score: 1.0\
+\
+	 # Goal:(and (detected-in-prohibited)  (at-vessel-destination f3-0f)  (detected-concealment) )\
+	 # Ideal Plan of G: 10\
+	 # mMinus: 5[enter-prohibited-area f5-5f f4-5f up, enter-prohibited-area f4-5f f3-5f up, enter-prohibited-area f3-5f f3-4f left, move f3-4f f3-3f left, move f3-3f f3-2f left]\
+	 # mPlus: 5[turn_off_signals, covert f3-2f f2-2f up, turn_on_signals, move f3-2f f3-1f left, reach-destination f3-1f f3-0f left]\
+	 @@@@ Score: 1.0\
+\
+	 # Goal:(and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f3-0f) )\
+	 # Ideal Plan of G: 7\
+	 # mMinus: 5[enter-prohibited-area f5-5f f4-5f up, enter-prohibited-area f4-5f f3-5f up, enter-prohibited-area f3-5f f3-4f left, move f3-4f f3-3f left, move f3-3f f3-2f left]\
+	 # mPlus: 2[move f3-2f f3-1f left, reach-destination f3-1f f3-0f left]\
+	 @@@@ Score: 1.0\
+\
+	 # Goal:(and (detected-in-prohibited)  (not (detected-in-surveillance))  (detected-concealment)  (at-vessel-destination f1-1f) )\
+	 # Ideal Plan of G: 11\
+	 # mMinus: 5[enter-prohibited-area f5-5f f4-5f up, enter-prohibited-area f4-5f f3-5f up, enter-prohibited-area f3-5f f3-4f left, move f3-4f f3-3f left, move f3-3f f3-2f left]\
+	 # mPlus: 6[move f3-2f f3-1f left, move f3-1f f2-1f up, turn_off_signals, covert f2-1f f2-2f right, turn_on_signals, reach-destination f2-1f f1-1f up]\
+	 @@@@ Score: 1.0\
+\
+	 # Goal:(and (detected-in-prohibited)  (not (detected-in-surveillance))  (not (detected-concealment))  (at-vessel-destination f1-1f) )\
+	 # Ideal Plan of G: 8\
+	 # mMinus: 5[enter-prohibited-area f5-5f f4-5f up, enter-prohibited-area f4-5f f3-5f up, enter-prohibited-area f3-5f f3-4f left, move f3-4f f3-3f left, move f3-3f f3-2f left]\
+	 # mPlus: 3[move f3-2f f3-1f left, move f3-1f f2-1f up, reach-destination f2-1f f1-1f up]\
+	 @@@@ Score: 1.0\
+\
+	 # Goal:(and (detected-in-prohibited)  (detected-concealment)  (at-vessel-destination f1-1f) )\
+	 # Ideal Plan of G: 11\
+	 # mMinus: 5[enter-prohibited-area f5-5f f4-5f up, enter-prohibited-area f4-5f f3-5f up, enter-prohibited-area f3-5f f3-4f left, move f3-4f f3-3f left, move f3-3f f3-2f left]\
+	 # mPlus: 6[enter-surveillance-area f3-2f f2-2f up, enter-surveillance-area f2-2f f1-2f up, turn_off_signals, covert f1-2f f2-2f down, turn_on_signals, reach-destination f1-2f f1-1f left]\
+	 @@@@ Score: 1.0\
+\
+	 # Goal:(and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f1-1f) )\
+	 # Ideal Plan of G: 8\
+	 # mMinus: 5[enter-prohibited-area f5-5f f4-5f up, enter-prohibited-area f4-5f f3-5f up, enter-prohibited-area f3-5f f3-4f left, move f3-4f f3-3f left, move f3-3f f3-2f left]\
+	 # mPlus: 3[enter-surveillance-area f3-2f f2-2f up, enter-surveillance-area f2-2f f1-2f up, reach-destination f1-2f f1-1f left]\
+	 @@@@ Score: 1.0\
+\
+	 # Goal:(and (detected-in-prohibited)  (at-vessel-destination f0-4f)  (detected-concealment) )\
+	 # Ideal Plan of G: 9\
+	 # mMinus: 5[enter-prohibited-area f5-5f f4-5f up, enter-prohibited-area f4-5f f3-5f up, enter-prohibited-area f3-5f f3-4f left, move f3-4f f3-3f left, move f3-3f f3-2f left]\
+	 # mPlus: 8[move f3-2f f3-3f right, enter-prohibited-area f3-3f f3-4f right, enter-surveillance-area f3-4f f2-4f up, enter-surveillance-area f2-4f f1-4f up, turn_off_signals, covert f1-4f f2-4f down, turn_on_signals, reach-destination f1-4f f0-4f up]\
+	 @@@@ Score: 0.6923077\
+\
+	 # Goal:(and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f0-4f) )\
+	 # Ideal Plan of G: 6\
+	 # mMinus: 5[enter-prohibited-area f5-5f f4-5f up, enter-prohibited-area f4-5f f3-5f up, enter-prohibited-area f3-5f f3-4f left, move f3-4f f3-3f left, move f3-3f f3-2f left]\
+	 # mPlus: 5[move f3-2f f3-3f right, enter-surveillance-area f3-3f f2-3f up, enter-surveillance-area f2-3f f2-4f right, enter-surveillance-area f2-4f f1-4f up, reach-destination f1-4f f0-4f up]\
+	 @@@@ Score: 0.6\
+	 - Probability of (and (detected-in-prohibited)  (not (detected-in-surveillance))  (at-vessel-destination f3-0f)  (detected-concealment) ): 0.107615896\
+	 - Probability of (and (detected-in-prohibited)  (not (detected-in-surveillance))  (not (detected-concealment))  (at-vessel-destination f3-0f) ): 0.107615896\
+	 - Probability of (and (detected-in-prohibited)  (at-vessel-destination f3-0f)  (detected-concealment) ): 0.107615896\
+	 - Probability of (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f3-0f) ): 0.107615896\
+	 - Probability of (and (detected-in-prohibited)  (not (detected-in-surveillance))  (detected-concealment)  (at-vessel-destination f1-1f) ): 0.107615896\
+	 - Probability of (and (detected-in-prohibited)  (not (detected-in-surveillance))  (not (detected-concealment))  (at-vessel-destination f1-1f) ): 0.107615896\
+	 - Probability of (and (detected-in-prohibited)  (detected-concealment)  (at-vessel-destination f1-1f) ): 0.107615896\
+	 - Probability of (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f1-1f) ): 0.107615896\
+	 - Probability of (and (detected-in-prohibited)  (at-vessel-destination f0-4f)  (detected-concealment) ): 0.07450332\
+	 - Probability of (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f0-4f) ): 0.06456954\
+detected-in-prohibited: 100.0%\
+not (detected-in-surveillance): 43.04636%\
+not (detected-concealment): 49.50331%\
+at-vessel-destination f0-4f: 13.907287%\
+at-vessel-destination f3-0f: 43.04636%\
+detected-concealment: 50.496693%\
+at-vessel-destination f1-1f: 43.04636%\
+\
+-> %%%%%%%%%% loop 3\
+\
+-> %%%%%%%%%% explanan: [[0.2006590779075405, move f3-4f f3-3f left]]\
+\
+-> Why Not goal (and (detected-in-prohibited)  (at-vessel-destination f0-4f)  (detected-concealment) )?\
+-> It is because the agent did move f3-4f f3-3f left, It would have done this ([enter-surveillance-area f3-4f f2-4f up, enter-surveillance-area f2-4f f1-4f up, turn_off_signals, covert f1-4f f2-4f down, turn_on_signals, reach-destination f1-4f f0-4f up]) if the (and (detected-in-prohibited)  (at-vessel-destination f0-4f)  (detected-concealment) ) was the goal\
+\
+-> %%%%%%%%%% loop 3\
+\
+-> %%%%%%%%%% explanan: [[0.28766931697644826, move f3-4f f3-3f left]]\
+\
+-> Why Not goal (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f0-4f) )?\
+-> It is because the agent did move f3-4f f3-3f left, It would have done this ([enter-surveillance-area f3-4f f2-4f up, enter-surveillance-area f2-4f f1-4f up, reach-destination f1-4f f0-4f up]) if the (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f0-4f) ) was the goal\
+\
+-> Why goal (and (detected-in-prohibited)  (not (detected-in-surveillance))  (at-vessel-destination f3-0f)  (detected-concealment) )?\
+-> It is because the agent did move f3-3f f3-2f left\
+\
+-> %%%%%%%%%% loop 3\
+\
+-> %%%%%%%%%% explanan: [[0.2006590779075405, move f3-4f f3-3f left]]\
+\
+-> Why Not goal (and (detected-in-prohibited)  (at-vessel-destination f0-4f)  (detected-concealment) )?\
+-> It is because the agent did move f3-4f f3-3f left, It would have done this ([enter-surveillance-area f3-4f f2-4f up, enter-surveillance-area f2-4f f1-4f up, turn_off_signals, covert f1-4f f2-4f down, turn_on_signals, reach-destination f1-4f f0-4f up]) if the (and (detected-in-prohibited)  (at-vessel-destination f0-4f)  (detected-concealment) ) was the goal\
+\
+-> %%%%%%%%%% loop 3\
+\
+-> %%%%%%%%%% explanan: [[0.28766931697644826, move f3-4f f3-3f left]]\
+\
+-> Why Not goal (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f0-4f) )?\
+-> It is because the agent did move f3-4f f3-3f left, It would have done this ([enter-surveillance-area f3-4f f2-4f up, enter-surveillance-area f2-4f f1-4f up, reach-destination f1-4f f0-4f up]) if the (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f0-4f) ) was the goal\
+\
+-> Why goal (and (detected-in-prohibited)  (not (detected-in-surveillance))  (not (detected-concealment))  (at-vessel-destination f3-0f) )?\
+-> It is because the agent did move f3-3f f3-2f left\
+\
+-> %%%%%%%%%% loop 3\
+\
+-> %%%%%%%%%% explanan: [[0.2006590779075405, move f3-4f f3-3f left]]\
+\
+-> Why Not goal (and (detected-in-prohibited)  (at-vessel-destination f0-4f)  (detected-concealment) )?\
+-> It is because the agent did move f3-4f f3-3f left, It would have done this ([enter-surveillance-area f3-4f f2-4f up, enter-surveillance-area f2-4f f1-4f up, turn_off_signals, covert f1-4f f2-4f down, turn_on_signals, reach-destination f1-4f f0-4f up]) if the (and (detected-in-prohibited)  (at-vessel-destination f0-4f)  (detected-concealment) ) was the goal\
+\
+-> %%%%%%%%%% loop 3\
+\
+-> %%%%%%%%%% explanan: [[0.28766931697644826, move f3-4f f3-3f left]]\
+\
+-> Why Not goal (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f0-4f) )?\
+-> It is because the agent did move f3-4f f3-3f left, It would have done this ([enter-surveillance-area f3-4f f2-4f up, enter-surveillance-area f2-4f f1-4f up, reach-destination f1-4f f0-4f up]) if the (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f0-4f) ) was the goal\
+\
+-> Why goal (and (detected-in-prohibited)  (at-vessel-destination f3-0f)  (detected-concealment) )?\
+-> It is because the agent did move f3-3f f3-2f left\
+\
+-> %%%%%%%%%% loop 3\
+\
+-> %%%%%%%%%% explanan: [[0.2006590779075405, move f3-4f f3-3f left]]\
+\
+-> Why Not goal (and (detected-in-prohibited)  (at-vessel-destination f0-4f)  (detected-concealment) )?\
+-> It is because the agent did move f3-4f f3-3f left, It would have done this ([enter-surveillance-area f3-4f f2-4f up, enter-surveillance-area f2-4f f1-4f up, turn_off_signals, covert f1-4f f2-4f down, turn_on_signals, reach-destination f1-4f f0-4f up]) if the (and (detected-in-prohibited)  (at-vessel-destination f0-4f)  (detected-concealment) ) was the goal\
+\
+-> %%%%%%%%%% loop 3\
+\
+-> %%%%%%%%%% explanan: [[0.28766931697644826, move f3-4f f3-3f left]]\
+\
+-> Why Not goal (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f0-4f) )?\
+-> It is because the agent did move f3-4f f3-3f left, It would have done this ([enter-surveillance-area f3-4f f2-4f up, enter-surveillance-area f2-4f f1-4f up, reach-destination f1-4f f0-4f up]) if the (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f0-4f) ) was the goal\
+\
+-> Why goal (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f3-0f) )?\
+-> It is because the agent did move f3-3f f3-2f left\
+\
+-> %%%%%%%%%% loop 3\
+\
+-> %%%%%%%%%% explanan: [[0.2006590779075405, move f3-4f f3-3f left]]\
+\
+-> Why Not goal (and (detected-in-prohibited)  (at-vessel-destination f0-4f)  (detected-concealment) )?\
+-> It is because the agent did move f3-4f f3-3f left, It would have done this ([enter-surveillance-area f3-4f f2-4f up, enter-surveillance-area f2-4f f1-4f up, turn_off_signals, covert f1-4f f2-4f down, turn_on_signals, reach-destination f1-4f f0-4f up]) if the (and (detected-in-prohibited)  (at-vessel-destination f0-4f)  (detected-concealment) ) was the goal\
+\
+-> %%%%%%%%%% loop 3\
+\
+-> %%%%%%%%%% explanan: [[0.28766931697644826, move f3-4f f3-3f left]]\
+\
+-> Why Not goal (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f0-4f) )?\
+-> It is because the agent did move f3-4f f3-3f left, It would have done this ([enter-surveillance-area f3-4f f2-4f up, enter-surveillance-area f2-4f f1-4f up, reach-destination f1-4f f0-4f up]) if the (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f0-4f) ) was the goal\
+\
+-> Why goal (and (detected-in-prohibited)  (not (detected-in-surveillance))  (detected-concealment)  (at-vessel-destination f1-1f) )?\
+-> It is because the agent did move f3-3f f3-2f left\
+\
+-> %%%%%%%%%% loop 3\
+\
+-> %%%%%%%%%% explanan: [[0.2006590779075405, move f3-4f f3-3f left]]\
+\
+-> Why Not goal (and (detected-in-prohibited)  (at-vessel-destination f0-4f)  (detected-concealment) )?\
+-> It is because the agent did move f3-4f f3-3f left, It would have done this ([enter-surveillance-area f3-4f f2-4f up, enter-surveillance-area f2-4f f1-4f up, turn_off_signals, covert f1-4f f2-4f down, turn_on_signals, reach-destination f1-4f f0-4f up]) if the (and (detected-in-prohibited)  (at-vessel-destination f0-4f)  (detected-concealment) ) was the goal\
+\
+-> %%%%%%%%%% loop 3\
+\
+-> %%%%%%%%%% explanan: [[0.28766931697644826, move f3-4f f3-3f left]]\
+\
+-> Why Not goal (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f0-4f) )?\
+-> It is because the agent did move f3-4f f3-3f left, It would have done this ([enter-surveillance-area f3-4f f2-4f up, enter-surveillance-area f2-4f f1-4f up, reach-destination f1-4f f0-4f up]) if the (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f0-4f) ) was the goal\
+\
+-> Why goal (and (detected-in-prohibited)  (not (detected-in-surveillance))  (not (detected-concealment))  (at-vessel-destination f1-1f) )?\
+-> It is because the agent did move f3-3f f3-2f left\
+\
+-> %%%%%%%%%% loop 3\
+\
+-> %%%%%%%%%% explanan: [[0.2006590779075405, move f3-4f f3-3f left]]\
+\
+-> Why Not goal (and (detected-in-prohibited)  (at-vessel-destination f0-4f)  (detected-concealment) )?\
+-> It is because the agent did move f3-4f f3-3f left, It would have done this ([enter-surveillance-area f3-4f f2-4f up, enter-surveillance-area f2-4f f1-4f up, turn_off_signals, covert f1-4f f2-4f down, turn_on_signals, reach-destination f1-4f f0-4f up]) if the (and (detected-in-prohibited)  (at-vessel-destination f0-4f)  (detected-concealment) ) was the goal\
+\
+-> %%%%%%%%%% loop 3\
+\
+-> %%%%%%%%%% explanan: [[0.28766931697644826, move f3-4f f3-3f left]]\
+\
+-> Why Not goal (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f0-4f) )?\
+-> It is because the agent did move f3-4f f3-3f left, It would have done this ([enter-surveillance-area f3-4f f2-4f up, enter-surveillance-area f2-4f f1-4f up, reach-destination f1-4f f0-4f up]) if the (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f0-4f) ) was the goal\
+\
+-> Why goal (and (detected-in-prohibited)  (detected-concealment)  (at-vessel-destination f1-1f) )?\
+-> It is because the agent did move f3-3f f3-2f left\
+\
+-> %%%%%%%%%% loop 3\
+\
+-> %%%%%%%%%% explanan: [[0.2006590779075405, move f3-4f f3-3f left]]\
+\
+-> Why Not goal (and (detected-in-prohibited)  (at-vessel-destination f0-4f)  (detected-concealment) )?\
+-> It is because the agent did move f3-4f f3-3f left, It would have done this ([enter-surveillance-area f3-4f f2-4f up, enter-surveillance-area f2-4f f1-4f up, turn_off_signals, covert f1-4f f2-4f down, turn_on_signals, reach-destination f1-4f f0-4f up]) if the (and (detected-in-prohibited)  (at-vessel-destination f0-4f)  (detected-concealment) ) was the goal\
+\
+-> %%%%%%%%%% loop 3\
+\
+-> %%%%%%%%%% explanan: [[0.28766931697644826, move f3-4f f3-3f left]]\
+\
+-> Why Not goal (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f0-4f) )?\
+-> It is because the agent did move f3-4f f3-3f left, It would have done this ([enter-surveillance-area f3-4f f2-4f up, enter-surveillance-area f2-4f f1-4f up, reach-destination f1-4f f0-4f up]) if the (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f0-4f) ) was the goal\
+\
+-> Why goal (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f1-1f) )?\
+-> It is because the agent did move f3-3f f3-2f left\
+\
+-> TPR: 1.0\
+-> FPR: 0.7\
+-> FNR: 0.0\
+\
+$> Observation (5) :move f3-2f f3-1f left\
+\
+ $> FilteredGoal[(and (detected-in-prohibited)  (not (detected-in-surveillance))  (at-vessel-destination f3-0f)  (detected-concealment) ), (and (detected-in-prohibited)  (not (detected-in-surveillance))  (not (detected-concealment))  (at-vessel-destination f3-0f) ), (and (detected-in-prohibited)  (at-vessel-destination f3-0f)  (detected-concealment) ), (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f3-0f) ), (and (detected-in-prohibited)  (not (detected-in-surveillance))  (detected-concealment)  (at-vessel-destination f1-1f) ), (and (detected-in-prohibited)  (not (detected-in-surveillance))  (not (detected-concealment))  (at-vessel-destination f1-1f) ), (and (detected-in-prohibited)  (detected-concealment)  (at-vessel-destination f1-1f) ), (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f1-1f) ), (and (detected-in-prohibited)  (at-vessel-destination f0-4f)  (detected-concealment) ), (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f0-4f) )]\
+	 # goal count:10\
+\
+	 # Goal:(and (detected-in-prohibited)  (not (detected-in-surveillance))  (at-vessel-destination f3-0f)  (detected-concealment) )\
+	 # Ideal Plan of G: 10\
+	 # mMinus: 6[enter-prohibited-area f5-5f f4-5f up, enter-prohibited-area f4-5f f3-5f up, enter-prohibited-area f3-5f f3-4f left, move f3-4f f3-3f left, move f3-3f f3-2f left, move f3-2f f3-1f left]\
+	 # mPlus: 6[move f3-1f f2-1f up, turn_off_signals, covert f2-1f f2-2f right, turn_on_signals, move f2-1f f3-1f down, reach-destination f3-1f f3-0f left]\
+	 @@@@ Score: 0.8333333\
+\
+	 # Goal:(and (detected-in-prohibited)  (not (detected-in-surveillance))  (not (detected-concealment))  (at-vessel-destination f3-0f) )\
+	 # Ideal Plan of G: 7\
+	 # mMinus: 6[enter-prohibited-area f5-5f f4-5f up, enter-prohibited-area f4-5f f3-5f up, enter-prohibited-area f3-5f f3-4f left, move f3-4f f3-3f left, move f3-3f f3-2f left, move f3-2f f3-1f left]\
+	 # mPlus: 1[reach-destination f3-1f f3-0f left]\
+	 @@@@ Score: 1.0\
+\
+	 # Goal:(and (detected-in-prohibited)  (at-vessel-destination f3-0f)  (detected-concealment) )\
+	 # Ideal Plan of G: 10\
+	 # mMinus: 6[enter-prohibited-area f5-5f f4-5f up, enter-prohibited-area f4-5f f3-5f up, enter-prohibited-area f3-5f f3-4f left, move f3-4f f3-3f left, move f3-3f f3-2f left, move f3-2f f3-1f left]\
+	 # mPlus: 6[move f3-1f f2-1f up, turn_off_signals, covert f2-1f f2-2f right, turn_on_signals, move f2-1f f3-1f down, reach-destination f3-1f f3-0f left]\
+	 @@@@ Score: 0.8333333\
+\
+	 # Goal:(and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f3-0f) )\
+	 # Ideal Plan of G: 7\
+	 # mMinus: 6[enter-prohibited-area f5-5f f4-5f up, enter-prohibited-area f4-5f f3-5f up, enter-prohibited-area f3-5f f3-4f left, move f3-4f f3-3f left, move f3-3f f3-2f left, move f3-2f f3-1f left]\
+	 # mPlus: 1[reach-destination f3-1f f3-0f left]\
+	 @@@@ Score: 1.0\
+\
+	 # Goal:(and (detected-in-prohibited)  (not (detected-in-surveillance))  (detected-concealment)  (at-vessel-destination f1-1f) )\
+	 # Ideal Plan of G: 11\
+	 # mMinus: 6[enter-prohibited-area f5-5f f4-5f up, enter-prohibited-area f4-5f f3-5f up, enter-prohibited-area f3-5f f3-4f left, move f3-4f f3-3f left, move f3-3f f3-2f left, move f3-2f f3-1f left]\
+	 # mPlus: 5[move f3-1f f2-1f up, turn_off_signals, covert f2-1f f2-2f right, turn_on_signals, reach-destination f2-1f f1-1f up]\
+	 @@@@ Score: 1.0\
+\
+	 # Goal:(and (detected-in-prohibited)  (not (detected-in-surveillance))  (not (detected-concealment))  (at-vessel-destination f1-1f) )\
+	 # Ideal Plan of G: 8\
+	 # mMinus: 6[enter-prohibited-area f5-5f f4-5f up, enter-prohibited-area f4-5f f3-5f up, enter-prohibited-area f3-5f f3-4f left, move f3-4f f3-3f left, move f3-3f f3-2f left, move f3-2f f3-1f left]\
+	 # mPlus: 2[move f3-1f f2-1f up, reach-destination f2-1f f1-1f up]\
+	 @@@@ Score: 1.0\
+\
+	 # Goal:(and (detected-in-prohibited)  (detected-concealment)  (at-vessel-destination f1-1f) )\
+	 # Ideal Plan of G: 11\
+	 # mMinus: 6[enter-prohibited-area f5-5f f4-5f up, enter-prohibited-area f4-5f f3-5f up, enter-prohibited-area f3-5f f3-4f left, move f3-4f f3-3f left, move f3-3f f3-2f left, move f3-2f f3-1f left]\
+	 # mPlus: 5[move f3-1f f2-1f up, turn_off_signals, covert f2-1f f2-2f right, turn_on_signals, reach-destination f2-1f f1-1f up]\
+	 @@@@ Score: 1.0\
+\
+	 # Goal:(and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f1-1f) )\
+	 # Ideal Plan of G: 8\
+	 # mMinus: 6[enter-prohibited-area f5-5f f4-5f up, enter-prohibited-area f4-5f f3-5f up, enter-prohibited-area f3-5f f3-4f left, move f3-4f f3-3f left, move f3-3f f3-2f left, move f3-2f f3-1f left]\
+	 # mPlus: 2[move f3-1f f2-1f up, reach-destination f2-1f f1-1f up]\
+	 @@@@ Score: 1.0\
+\
+	 # Goal:(and (detected-in-prohibited)  (at-vessel-destination f0-4f)  (detected-concealment) )\
+	 # Ideal Plan of G: 9\
+	 # mMinus: 6[enter-prohibited-area f5-5f f4-5f up, enter-prohibited-area f4-5f f3-5f up, enter-prohibited-area f3-5f f3-4f left, move f3-4f f3-3f left, move f3-3f f3-2f left, move f3-2f f3-1f left]\
+	 # mPlus: 9[move f3-1f f2-1f up, enter-surveillance-area f2-1f f2-2f right, enter-surveillance-area f2-2f f1-2f up, move f1-2f f0-2f up, move f0-2f f0-3f right, turn_off_signals, covert f0-3f f1-3f down, turn_on_signals, reach-destination f0-3f f0-4f right]\
+	 @@@@ Score: 0.6\
+\
+	 # Goal:(and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f0-4f) )\
+	 # Ideal Plan of G: 6\
+	 # mMinus: 6[enter-prohibited-area f5-5f f4-5f up, enter-prohibited-area f4-5f f3-5f up, enter-prohibited-area f3-5f f3-4f left, move f3-4f f3-3f left, move f3-3f f3-2f left, move f3-2f f3-1f left]\
+	 # mPlus: 6[move f3-1f f3-2f right, move f3-2f f3-3f right, enter-surveillance-area f3-3f f2-3f up, enter-surveillance-area f2-3f f2-4f right, enter-surveillance-area f2-4f f1-4f up, reach-destination f1-4f f0-4f up]\
+	 @@@@ Score: 0.5\
+	 - Probability of (and (detected-in-prohibited)  (not (detected-in-surveillance))  (at-vessel-destination f3-0f)  (detected-concealment) ): 0.09505703\
+	 - Probability of (and (detected-in-prohibited)  (not (detected-in-surveillance))  (not (detected-concealment))  (at-vessel-destination f3-0f) ): 0.11406844\
+	 - Probability of (and (detected-in-prohibited)  (at-vessel-destination f3-0f)  (detected-concealment) ): 0.09505703\
+	 - Probability of (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f3-0f) ): 0.11406844\
+	 - Probability of (and (detected-in-prohibited)  (not (detected-in-surveillance))  (detected-concealment)  (at-vessel-destination f1-1f) ): 0.11406844\
+	 - Probability of (and (detected-in-prohibited)  (not (detected-in-surveillance))  (not (detected-concealment))  (at-vessel-destination f1-1f) ): 0.11406844\
+	 - Probability of (and (detected-in-prohibited)  (detected-concealment)  (at-vessel-destination f1-1f) ): 0.11406844\
+	 - Probability of (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f1-1f) ): 0.11406844\
+	 - Probability of (and (detected-in-prohibited)  (at-vessel-destination f0-4f)  (detected-concealment) ): 0.06844107\
+	 - Probability of (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f0-4f) ): 0.05703422\
+detected-in-prohibited: 100.0%\
+not (detected-in-surveillance): 43.726234%\
+not (detected-concealment): 51.3308%\
+at-vessel-destination f0-4f: 12.547529%\
+at-vessel-destination f3-0f: 41.825096%\
+detected-concealment: 48.6692%\
+at-vessel-destination f1-1f: 45.627377%\
+\
+-> %%%%%%%%%% loop 4\
+\
+-> Why Not goal (and (detected-in-prohibited)  (not (detected-in-surveillance))  (at-vessel-destination f3-0f)  (detected-concealment) )?\
+-> It is because the agent did move f3-2f f3-1f left, It would have done this ([turn_off_signals, covert f3-2f f2-2f up, turn_on_signals, move f3-2f f3-1f left, reach-destination f3-1f f3-0f left]) if the (and (detected-in-prohibited)  (not (detected-in-surveillance))  (at-vessel-destination f3-0f)  (detected-concealment) ) was the goal\
+\
+-> %%%%%%%%%% loop 4\
+\
+-> Why Not goal (and (detected-in-prohibited)  (at-vessel-destination f3-0f)  (detected-concealment) )?\
+-> It is because the agent did move f3-2f f3-1f left, It would have done this ([turn_off_signals, covert f3-2f f2-2f up, turn_on_signals, move f3-2f f3-1f left, reach-destination f3-1f f3-0f left]) if the (and (detected-in-prohibited)  (at-vessel-destination f3-0f)  (detected-concealment) ) was the goal\
+\
+-> %%%%%%%%%% loop 3\
+\
+-> %%%%%%%%%% explanan: [[0.2006590779075405, move f3-4f f3-3f left]]\
+\
+-> Why Not goal (and (detected-in-prohibited)  (at-vessel-destination f0-4f)  (detected-concealment) )?\
+-> It is because the agent did move f3-4f f3-3f left, It would have done this ([enter-surveillance-area f3-4f f2-4f up, enter-surveillance-area f2-4f f1-4f up, turn_off_signals, covert f1-4f f2-4f down, turn_on_signals, reach-destination f1-4f f0-4f up]) if the (and (detected-in-prohibited)  (at-vessel-destination f0-4f)  (detected-concealment) ) was the goal\
+\
+-> %%%%%%%%%% loop 3\
+\
+-> %%%%%%%%%% explanan: [[0.28766931697644826, move f3-4f f3-3f left]]\
+\
+-> Why Not goal (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f0-4f) )?\
+-> It is because the agent did move f3-4f f3-3f left, It would have done this ([enter-surveillance-area f3-4f f2-4f up, enter-surveillance-area f2-4f f1-4f up, reach-destination f1-4f f0-4f up]) if the (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f0-4f) ) was the goal\
+\
+-> Why goal (and (detected-in-prohibited)  (not (detected-in-surveillance))  (not (detected-concealment))  (at-vessel-destination f3-0f) )?\
+-> It is because the agent did move f3-2f f3-1f left\
+\
+-> %%%%%%%%%% loop 4\
+\
+-> Why Not goal (and (detected-in-prohibited)  (not (detected-in-surveillance))  (at-vessel-destination f3-0f)  (detected-concealment) )?\
+-> It is because the agent did move f3-2f f3-1f left, It would have done this ([turn_off_signals, covert f3-2f f2-2f up, turn_on_signals, move f3-2f f3-1f left, reach-destination f3-1f f3-0f left]) if the (and (detected-in-prohibited)  (not (detected-in-surveillance))  (at-vessel-destination f3-0f)  (detected-concealment) ) was the goal\
+\
+-> %%%%%%%%%% loop 4\
+\
+-> Why Not goal (and (detected-in-prohibited)  (at-vessel-destination f3-0f)  (detected-concealment) )?\
+-> It is because the agent did move f3-2f f3-1f left, It would have done this ([turn_off_signals, covert f3-2f f2-2f up, turn_on_signals, move f3-2f f3-1f left, reach-destination f3-1f f3-0f left]) if the (and (detected-in-prohibited)  (at-vessel-destination f3-0f)  (detected-concealment) ) was the goal\
+\
+-> %%%%%%%%%% loop 3\
+\
+-> %%%%%%%%%% explanan: [[0.2006590779075405, move f3-4f f3-3f left]]\
+\
+-> Why Not goal (and (detected-in-prohibited)  (at-vessel-destination f0-4f)  (detected-concealment) )?\
+-> It is because the agent did move f3-4f f3-3f left, It would have done this ([enter-surveillance-area f3-4f f2-4f up, enter-surveillance-area f2-4f f1-4f up, turn_off_signals, covert f1-4f f2-4f down, turn_on_signals, reach-destination f1-4f f0-4f up]) if the (and (detected-in-prohibited)  (at-vessel-destination f0-4f)  (detected-concealment) ) was the goal\
+\
+-> %%%%%%%%%% loop 3\
+\
+-> %%%%%%%%%% explanan: [[0.28766931697644826, move f3-4f f3-3f left]]\
+\
+-> Why Not goal (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f0-4f) )?\
+-> It is because the agent did move f3-4f f3-3f left, It would have done this ([enter-surveillance-area f3-4f f2-4f up, enter-surveillance-area f2-4f f1-4f up, reach-destination f1-4f f0-4f up]) if the (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f0-4f) ) was the goal\
+\
+-> Why goal (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f3-0f) )?\
+-> It is because the agent did move f3-2f f3-1f left\
+\
+-> %%%%%%%%%% loop 4\
+\
+-> Why Not goal (and (detected-in-prohibited)  (not (detected-in-surveillance))  (at-vessel-destination f3-0f)  (detected-concealment) )?\
+-> It is because the agent did move f3-2f f3-1f left, It would have done this ([turn_off_signals, covert f3-2f f2-2f up, turn_on_signals, move f3-2f f3-1f left, reach-destination f3-1f f3-0f left]) if the (and (detected-in-prohibited)  (not (detected-in-surveillance))  (at-vessel-destination f3-0f)  (detected-concealment) ) was the goal\
+\
+-> %%%%%%%%%% loop 4\
+\
+-> Why Not goal (and (detected-in-prohibited)  (at-vessel-destination f3-0f)  (detected-concealment) )?\
+-> It is because the agent did move f3-2f f3-1f left, It would have done this ([turn_off_signals, covert f3-2f f2-2f up, turn_on_signals, move f3-2f f3-1f left, reach-destination f3-1f f3-0f left]) if the (and (detected-in-prohibited)  (at-vessel-destination f3-0f)  (detected-concealment) ) was the goal\
+\
+-> %%%%%%%%%% loop 3\
+\
+-> %%%%%%%%%% explanan: [[0.2006590779075405, move f3-4f f3-3f left]]\
+\
+-> Why Not goal (and (detected-in-prohibited)  (at-vessel-destination f0-4f)  (detected-concealment) )?\
+-> It is because the agent did move f3-4f f3-3f left, It would have done this ([enter-surveillance-area f3-4f f2-4f up, enter-surveillance-area f2-4f f1-4f up, turn_off_signals, covert f1-4f f2-4f down, turn_on_signals, reach-destination f1-4f f0-4f up]) if the (and (detected-in-prohibited)  (at-vessel-destination f0-4f)  (detected-concealment) ) was the goal\
+\
+-> %%%%%%%%%% loop 3\
+\
+-> %%%%%%%%%% explanan: [[0.28766931697644826, move f3-4f f3-3f left]]\
+\
+-> Why Not goal (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f0-4f) )?\
+-> It is because the agent did move f3-4f f3-3f left, It would have done this ([enter-surveillance-area f3-4f f2-4f up, enter-surveillance-area f2-4f f1-4f up, reach-destination f1-4f f0-4f up]) if the (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f0-4f) ) was the goal\
+\
+-> Why goal (and (detected-in-prohibited)  (not (detected-in-surveillance))  (detected-concealment)  (at-vessel-destination f1-1f) )?\
+-> It is because the agent did move f3-2f f3-1f left\
+\
+-> %%%%%%%%%% loop 4\
+\
+-> Why Not goal (and (detected-in-prohibited)  (not (detected-in-surveillance))  (at-vessel-destination f3-0f)  (detected-concealment) )?\
+-> It is because the agent did move f3-2f f3-1f left, It would have done this ([turn_off_signals, covert f3-2f f2-2f up, turn_on_signals, move f3-2f f3-1f left, reach-destination f3-1f f3-0f left]) if the (and (detected-in-prohibited)  (not (detected-in-surveillance))  (at-vessel-destination f3-0f)  (detected-concealment) ) was the goal\
+\
+-> %%%%%%%%%% loop 4\
+\
+-> Why Not goal (and (detected-in-prohibited)  (at-vessel-destination f3-0f)  (detected-concealment) )?\
+-> It is because the agent did move f3-2f f3-1f left, It would have done this ([turn_off_signals, covert f3-2f f2-2f up, turn_on_signals, move f3-2f f3-1f left, reach-destination f3-1f f3-0f left]) if the (and (detected-in-prohibited)  (at-vessel-destination f3-0f)  (detected-concealment) ) was the goal\
+\
+-> %%%%%%%%%% loop 3\
+\
+-> %%%%%%%%%% explanan: [[0.2006590779075405, move f3-4f f3-3f left]]\
+\
+-> Why Not goal (and (detected-in-prohibited)  (at-vessel-destination f0-4f)  (detected-concealment) )?\
+-> It is because the agent did move f3-4f f3-3f left, It would have done this ([enter-surveillance-area f3-4f f2-4f up, enter-surveillance-area f2-4f f1-4f up, turn_off_signals, covert f1-4f f2-4f down, turn_on_signals, reach-destination f1-4f f0-4f up]) if the (and (detected-in-prohibited)  (at-vessel-destination f0-4f)  (detected-concealment) ) was the goal\
+\
+-> %%%%%%%%%% loop 3\
+\
+-> %%%%%%%%%% explanan: [[0.28766931697644826, move f3-4f f3-3f left]]\
+\
+-> Why Not goal (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f0-4f) )?\
+-> It is because the agent did move f3-4f f3-3f left, It would have done this ([enter-surveillance-area f3-4f f2-4f up, enter-surveillance-area f2-4f f1-4f up, reach-destination f1-4f f0-4f up]) if the (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f0-4f) ) was the goal\
+\
+-> Why goal (and (detected-in-prohibited)  (not (detected-in-surveillance))  (not (detected-concealment))  (at-vessel-destination f1-1f) )?\
+-> It is because the agent did move f3-2f f3-1f left\
+\
+-> %%%%%%%%%% loop 4\
+\
+-> Why Not goal (and (detected-in-prohibited)  (not (detected-in-surveillance))  (at-vessel-destination f3-0f)  (detected-concealment) )?\
+-> It is because the agent did move f3-2f f3-1f left, It would have done this ([turn_off_signals, covert f3-2f f2-2f up, turn_on_signals, move f3-2f f3-1f left, reach-destination f3-1f f3-0f left]) if the (and (detected-in-prohibited)  (not (detected-in-surveillance))  (at-vessel-destination f3-0f)  (detected-concealment) ) was the goal\
+\
+-> %%%%%%%%%% loop 4\
+\
+-> Why Not goal (and (detected-in-prohibited)  (at-vessel-destination f3-0f)  (detected-concealment) )?\
+-> It is because the agent did move f3-2f f3-1f left, It would have done this ([turn_off_signals, covert f3-2f f2-2f up, turn_on_signals, move f3-2f f3-1f left, reach-destination f3-1f f3-0f left]) if the (and (detected-in-prohibited)  (at-vessel-destination f3-0f)  (detected-concealment) ) was the goal\
+\
+-> %%%%%%%%%% loop 3\
+\
+-> %%%%%%%%%% explanan: [[0.2006590779075405, move f3-4f f3-3f left]]\
+\
+-> Why Not goal (and (detected-in-prohibited)  (at-vessel-destination f0-4f)  (detected-concealment) )?\
+-> It is because the agent did move f3-4f f3-3f left, It would have done this ([enter-surveillance-area f3-4f f2-4f up, enter-surveillance-area f2-4f f1-4f up, turn_off_signals, covert f1-4f f2-4f down, turn_on_signals, reach-destination f1-4f f0-4f up]) if the (and (detected-in-prohibited)  (at-vessel-destination f0-4f)  (detected-concealment) ) was the goal\
+\
+-> %%%%%%%%%% loop 3\
+\
+-> %%%%%%%%%% explanan: [[0.28766931697644826, move f3-4f f3-3f left]]\
+\
+-> Why Not goal (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f0-4f) )?\
+-> It is because the agent did move f3-4f f3-3f left, It would have done this ([enter-surveillance-area f3-4f f2-4f up, enter-surveillance-area f2-4f f1-4f up, reach-destination f1-4f f0-4f up]) if the (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f0-4f) ) was the goal\
+\
+-> Why goal (and (detected-in-prohibited)  (detected-concealment)  (at-vessel-destination f1-1f) )?\
+-> It is because the agent did move f3-2f f3-1f left\
+\
+-> %%%%%%%%%% loop 4\
+\
+-> Why Not goal (and (detected-in-prohibited)  (not (detected-in-surveillance))  (at-vessel-destination f3-0f)  (detected-concealment) )?\
+-> It is because the agent did move f3-2f f3-1f left, It would have done this ([turn_off_signals, covert f3-2f f2-2f up, turn_on_signals, move f3-2f f3-1f left, reach-destination f3-1f f3-0f left]) if the (and (detected-in-prohibited)  (not (detected-in-surveillance))  (at-vessel-destination f3-0f)  (detected-concealment) ) was the goal\
+\
+-> %%%%%%%%%% loop 4\
+\
+-> Why Not goal (and (detected-in-prohibited)  (at-vessel-destination f3-0f)  (detected-concealment) )?\
+-> It is because the agent did move f3-2f f3-1f left, It would have done this ([turn_off_signals, covert f3-2f f2-2f up, turn_on_signals, move f3-2f f3-1f left, reach-destination f3-1f f3-0f left]) if the (and (detected-in-prohibited)  (at-vessel-destination f3-0f)  (detected-concealment) ) was the goal\
+\
+-> %%%%%%%%%% loop 3\
+\
+-> %%%%%%%%%% explanan: [[0.2006590779075405, move f3-4f f3-3f left]]\
+\
+-> Why Not goal (and (detected-in-prohibited)  (at-vessel-destination f0-4f)  (detected-concealment) )?\
+-> It is because the agent did move f3-4f f3-3f left, It would have done this ([enter-surveillance-area f3-4f f2-4f up, enter-surveillance-area f2-4f f1-4f up, turn_off_signals, covert f1-4f f2-4f down, turn_on_signals, reach-destination f1-4f f0-4f up]) if the (and (detected-in-prohibited)  (at-vessel-destination f0-4f)  (detected-concealment) ) was the goal\
+\
+-> %%%%%%%%%% loop 3\
+\
+-> %%%%%%%%%% explanan: [[0.28766931697644826, move f3-4f f3-3f left]]\
+\
+-> Why Not goal (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f0-4f) )?\
+-> It is because the agent did move f3-4f f3-3f left, It would have done this ([enter-surveillance-area f3-4f f2-4f up, enter-surveillance-area f2-4f f1-4f up, reach-destination f1-4f f0-4f up]) if the (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f0-4f) ) was the goal\
+\
+-> Why goal (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f1-1f) )?\
+-> It is because the agent did move f3-2f f3-1f left\
+\
+-> TPR: 1.0\
+-> FPR: 0.5\
+-> FNR: 0.0\
+\
+$> Observation (6) :move f3-1f f2-1f up\
+\
+ $> FilteredGoal[(and (detected-in-prohibited)  (not (detected-in-surveillance))  (at-vessel-destination f3-0f)  (detected-concealment) ), (and (detected-in-prohibited)  (not (detected-in-surveillance))  (not (detected-concealment))  (at-vessel-destination f3-0f) ), (and (detected-in-prohibited)  (at-vessel-destination f3-0f)  (detected-concealment) ), (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f3-0f) ), (and (detected-in-prohibited)  (not (detected-in-surveillance))  (detected-concealment)  (at-vessel-destination f1-1f) ), (and (detected-in-prohibited)  (not (detected-in-surveillance))  (not (detected-concealment))  (at-vessel-destination f1-1f) ), (and (detected-in-prohibited)  (detected-concealment)  (at-vessel-destination f1-1f) ), (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f1-1f) ), (and (detected-in-prohibited)  (at-vessel-destination f0-4f)  (detected-concealment) ), (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f0-4f) )]\
+	 # goal count:10\
+\
+	 # Goal:(and (detected-in-prohibited)  (not (detected-in-surveillance))  (at-vessel-destination f3-0f)  (detected-concealment) )\
+	 # Ideal Plan of G: 10\
+	 # mMinus: 7[enter-prohibited-area f5-5f f4-5f up, enter-prohibited-area f4-5f f3-5f up, enter-prohibited-area f3-5f f3-4f left, move f3-4f f3-3f left, move f3-3f f3-2f left, move f3-2f f3-1f left, move f3-1f f2-1f up]\
+	 # mPlus: 5[turn_off_signals, covert f2-1f f2-2f right, turn_on_signals, move f2-1f f3-1f down, reach-destination f3-1f f3-0f left]\
+	 @@@@ Score: 0.8333333\
+\
+	 # Goal:(and (detected-in-prohibited)  (not (detected-in-surveillance))  (not (detected-concealment))  (at-vessel-destination f3-0f) )\
+	 # Ideal Plan of G: 7\
+	 # mMinus: 7[enter-prohibited-area f5-5f f4-5f up, enter-prohibited-area f4-5f f3-5f up, enter-prohibited-area f3-5f f3-4f left, move f3-4f f3-3f left, move f3-3f f3-2f left, move f3-2f f3-1f left, move f3-1f f2-1f up]\
+	 # mPlus: 2[move f2-1f f3-1f down, reach-destination f3-1f f3-0f left]\
+	 @@@@ Score: 0.7777778\
+\
+	 # Goal:(and (detected-in-prohibited)  (at-vessel-destination f3-0f)  (detected-concealment) )\
+	 # Ideal Plan of G: 10\
+	 # mMinus: 7[enter-prohibited-area f5-5f f4-5f up, enter-prohibited-area f4-5f f3-5f up, enter-prohibited-area f3-5f f3-4f left, move f3-4f f3-3f left, move f3-3f f3-2f left, move f3-2f f3-1f left, move f3-1f f2-1f up]\
+	 # mPlus: 5[turn_off_signals, covert f2-1f f2-2f right, turn_on_signals, move f2-1f f3-1f down, reach-destination f3-1f f3-0f left]\
+	 @@@@ Score: 0.8333333\
+\
+	 # Goal:(and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f3-0f) )\
+	 # Ideal Plan of G: 7\
+	 # mMinus: 7[enter-prohibited-area f5-5f f4-5f up, enter-prohibited-area f4-5f f3-5f up, enter-prohibited-area f3-5f f3-4f left, move f3-4f f3-3f left, move f3-3f f3-2f left, move f3-2f f3-1f left, move f3-1f f2-1f up]\
+	 # mPlus: 2[move f2-1f f3-1f down, reach-destination f3-1f f3-0f left]\
+	 @@@@ Score: 0.7777778\
+\
+	 # Goal:(and (detected-in-prohibited)  (not (detected-in-surveillance))  (detected-concealment)  (at-vessel-destination f1-1f) )\
+	 # Ideal Plan of G: 11\
+	 # mMinus: 7[enter-prohibited-area f5-5f f4-5f up, enter-prohibited-area f4-5f f3-5f up, enter-prohibited-area f3-5f f3-4f left, move f3-4f f3-3f left, move f3-3f f3-2f left, move f3-2f f3-1f left, move f3-1f f2-1f up]\
+	 # mPlus: 4[turn_off_signals, covert f2-1f f2-2f right, turn_on_signals, reach-destination f2-1f f1-1f up]\
+	 @@@@ Score: 1.0\
+\
+	 # Goal:(and (detected-in-prohibited)  (not (detected-in-surveillance))  (not (detected-concealment))  (at-vessel-destination f1-1f) )\
+	 # Ideal Plan of G: 8\
+	 # mMinus: 7[enter-prohibited-area f5-5f f4-5f up, enter-prohibited-area f4-5f f3-5f up, enter-prohibited-area f3-5f f3-4f left, move f3-4f f3-3f left, move f3-3f f3-2f left, move f3-2f f3-1f left, move f3-1f f2-1f up]\
+	 # mPlus: 1[reach-destination f2-1f f1-1f up]\
+	 @@@@ Score: 1.0\
+\
+	 # Goal:(and (detected-in-prohibited)  (detected-concealment)  (at-vessel-destination f1-1f) )\
+	 # Ideal Plan of G: 11\
+	 # mMinus: 7[enter-prohibited-area f5-5f f4-5f up, enter-prohibited-area f4-5f f3-5f up, enter-prohibited-area f3-5f f3-4f left, move f3-4f f3-3f left, move f3-3f f3-2f left, move f3-2f f3-1f left, move f3-1f f2-1f up]\
+	 # mPlus: 4[turn_off_signals, covert f2-1f f2-2f right, turn_on_signals, reach-destination f2-1f f1-1f up]\
+	 @@@@ Score: 1.0\
+\
+	 # Goal:(and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f1-1f) )\
+	 # Ideal Plan of G: 8\
+	 # mMinus: 7[enter-prohibited-area f5-5f f4-5f up, enter-prohibited-area f4-5f f3-5f up, enter-prohibited-area f3-5f f3-4f left, move f3-4f f3-3f left, move f3-3f f3-2f left, move f3-2f f3-1f left, move f3-1f f2-1f up]\
+	 # mPlus: 1[reach-destination f2-1f f1-1f up]\
+	 @@@@ Score: 1.0\
+\
+	 # Goal:(and (detected-in-prohibited)  (at-vessel-destination f0-4f)  (detected-concealment) )\
+	 # Ideal Plan of G: 9\
+	 # mMinus: 7[enter-prohibited-area f5-5f f4-5f up, enter-prohibited-area f4-5f f3-5f up, enter-prohibited-area f3-5f f3-4f left, move f3-4f f3-3f left, move f3-3f f3-2f left, move f3-2f f3-1f left, move f3-1f f2-1f up]\
+	 # mPlus: 8[enter-surveillance-area f2-1f f2-2f right, enter-surveillance-area f2-2f f1-2f up, move f1-2f f0-2f up, move f0-2f f0-3f right, turn_off_signals, covert f0-3f f1-3f down, turn_on_signals, reach-destination f0-3f f0-4f right]\
+	 @@@@ Score: 0.6\
+\
+	 # Goal:(and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f0-4f) )\
+	 # Ideal Plan of G: 6\
+	 # mMinus: 7[enter-prohibited-area f5-5f f4-5f up, enter-prohibited-area f4-5f f3-5f up, enter-prohibited-area f3-5f f3-4f left, move f3-4f f3-3f left, move f3-3f f3-2f left, move f3-2f f3-1f left, move f3-1f f2-1f up]\
+	 # mPlus: 5[enter-surveillance-area f2-1f f2-2f right, enter-surveillance-area f2-2f f2-3f right, enter-surveillance-area f2-3f f2-4f right, enter-surveillance-area f2-4f f1-4f up, reach-destination f1-4f f0-4f up]\
+	 @@@@ Score: 0.5\
+	 - Probability of (and (detected-in-prohibited)  (not (detected-in-surveillance))  (at-vessel-destination f3-0f)  (detected-concealment) ): 0.100133516\
+	 - Probability of (and (detected-in-prohibited)  (not (detected-in-surveillance))  (not (detected-concealment))  (at-vessel-destination f3-0f) ): 0.09345795\
+	 - Probability of (and (detected-in-prohibited)  (at-vessel-destination f3-0f)  (detected-concealment) ): 0.100133516\
+	 - Probability of (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f3-0f) ): 0.09345795\
+	 - Probability of (and (detected-in-prohibited)  (not (detected-in-surveillance))  (detected-concealment)  (at-vessel-destination f1-1f) ): 0.12016022\
+	 - Probability of (and (detected-in-prohibited)  (not (detected-in-surveillance))  (not (detected-concealment))  (at-vessel-destination f1-1f) ): 0.12016022\
+	 - Probability of (and (detected-in-prohibited)  (detected-concealment)  (at-vessel-destination f1-1f) ): 0.12016022\
+	 - Probability of (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f1-1f) ): 0.12016022\
+	 - Probability of (and (detected-in-prohibited)  (at-vessel-destination f0-4f)  (detected-concealment) ): 0.07209614\
+	 - Probability of (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f0-4f) ): 0.06008011\
+detected-in-prohibited: 100.0%\
+not (detected-in-surveillance): 43.391193%\
+not (detected-concealment): 48.731647%\
+at-vessel-destination f0-4f: 13.217625%\
+at-vessel-destination f3-0f: 38.718296%\
+detected-concealment: 51.268364%\
+at-vessel-destination f1-1f: 48.064087%\
+\
+-> %%%%%%%%%% loop 3\
+\
+-> %%%%%%%%%% explanan: [[0.18231106632144933, move f3-2f f3-1f left]]\
+\
+-> Why Not goal (and (detected-in-prohibited)  (not (detected-in-surveillance))  (at-vessel-destination f3-0f)  (detected-concealment) )?\
+-> It is because the agent did move f3-2f f3-1f left, It would have done this ([turn_off_signals, covert f3-2f f2-2f up, turn_on_signals, move f3-2f f3-1f left, reach-destination f3-1f f3-0f left]) if the (and (detected-in-prohibited)  (not (detected-in-surveillance))  (at-vessel-destination f3-0f)  (detected-concealment) ) was the goal\
+\
+-> %%%%%%%%%% loop 4\
+\
+-> Why Not goal (and (detected-in-prohibited)  (not (detected-in-surveillance))  (not (detected-concealment))  (at-vessel-destination f3-0f) )?\
+-> It is because the agent did move f3-1f f2-1f up, It would have done this ([reach-destination f3-1f f3-0f left]) if the (and (detected-in-prohibited)  (not (detected-in-surveillance))  (not (detected-concealment))  (at-vessel-destination f3-0f) ) was the goal\
+\
+-> %%%%%%%%%% loop 3\
+\
+-> %%%%%%%%%% explanan: [[0.18231106632144933, move f3-2f f3-1f left]]\
+\
+-> Why Not goal (and (detected-in-prohibited)  (at-vessel-destination f3-0f)  (detected-concealment) )?\
+-> It is because the agent did move f3-2f f3-1f left, It would have done this ([turn_off_signals, covert f3-2f f2-2f up, turn_on_signals, move f3-2f f3-1f left, reach-destination f3-1f f3-0f left]) if the (and (detected-in-prohibited)  (at-vessel-destination f3-0f)  (detected-concealment) ) was the goal\
+\
+-> %%%%%%%%%% loop 4\
+\
+-> Why Not goal (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f3-0f) )?\
+-> It is because the agent did move f3-1f f2-1f up, It would have done this ([reach-destination f3-1f f3-0f left]) if the (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f3-0f) ) was the goal\
+\
+-> %%%%%%%%%% loop 3\
+\
+-> %%%%%%%%%% explanan: [[0.2006590779075405, move f3-4f f3-3f left]]\
+\
+-> Why Not goal (and (detected-in-prohibited)  (at-vessel-destination f0-4f)  (detected-concealment) )?\
+-> It is because the agent did move f3-4f f3-3f left, It would have done this ([enter-surveillance-area f3-4f f2-4f up, enter-surveillance-area f2-4f f1-4f up, turn_off_signals, covert f1-4f f2-4f down, turn_on_signals, reach-destination f1-4f f0-4f up]) if the (and (detected-in-prohibited)  (at-vessel-destination f0-4f)  (detected-concealment) ) was the goal\
+\
+-> %%%%%%%%%% loop 3\
+\
+-> %%%%%%%%%% explanan: [[0.28766931697644826, move f3-4f f3-3f left]]\
+\
+-> Why Not goal (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f0-4f) )?\
+-> It is because the agent did move f3-4f f3-3f left, It would have done this ([enter-surveillance-area f3-4f f2-4f up, enter-surveillance-area f2-4f f1-4f up, reach-destination f1-4f f0-4f up]) if the (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f0-4f) ) was the goal\
+\
+-> Why goal (and (detected-in-prohibited)  (not (detected-in-surveillance))  (detected-concealment)  (at-vessel-destination f1-1f) )?\
+-> It is because the agent did move f3-1f f2-1f up\
+\
+-> %%%%%%%%%% loop 3\
+\
+-> %%%%%%%%%% explanan: [[0.18231106632144933, move f3-2f f3-1f left]]\
+\
+-> Why Not goal (and (detected-in-prohibited)  (not (detected-in-surveillance))  (at-vessel-destination f3-0f)  (detected-concealment) )?\
+-> It is because the agent did move f3-2f f3-1f left, It would have done this ([turn_off_signals, covert f3-2f f2-2f up, turn_on_signals, move f3-2f f3-1f left, reach-destination f3-1f f3-0f left]) if the (and (detected-in-prohibited)  (not (detected-in-surveillance))  (at-vessel-destination f3-0f)  (detected-concealment) ) was the goal\
+\
+-> %%%%%%%%%% loop 4\
+\
+-> Why Not goal (and (detected-in-prohibited)  (not (detected-in-surveillance))  (not (detected-concealment))  (at-vessel-destination f3-0f) )?\
+-> It is because the agent did move f3-1f f2-1f up, It would have done this ([reach-destination f3-1f f3-0f left]) if the (and (detected-in-prohibited)  (not (detected-in-surveillance))  (not (detected-concealment))  (at-vessel-destination f3-0f) ) was the goal\
+\
+-> %%%%%%%%%% loop 3\
+\
+-> %%%%%%%%%% explanan: [[0.18231106632144933, move f3-2f f3-1f left]]\
+\
+-> Why Not goal (and (detected-in-prohibited)  (at-vessel-destination f3-0f)  (detected-concealment) )?\
+-> It is because the agent did move f3-2f f3-1f left, It would have done this ([turn_off_signals, covert f3-2f f2-2f up, turn_on_signals, move f3-2f f3-1f left, reach-destination f3-1f f3-0f left]) if the (and (detected-in-prohibited)  (at-vessel-destination f3-0f)  (detected-concealment) ) was the goal\
+\
+-> %%%%%%%%%% loop 4\
+\
+-> Why Not goal (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f3-0f) )?\
+-> It is because the agent did move f3-1f f2-1f up, It would have done this ([reach-destination f3-1f f3-0f left]) if the (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f3-0f) ) was the goal\
+\
+-> %%%%%%%%%% loop 3\
+\
+-> %%%%%%%%%% explanan: [[0.2006590779075405, move f3-4f f3-3f left]]\
+\
+-> Why Not goal (and (detected-in-prohibited)  (at-vessel-destination f0-4f)  (detected-concealment) )?\
+-> It is because the agent did move f3-4f f3-3f left, It would have done this ([enter-surveillance-area f3-4f f2-4f up, enter-surveillance-area f2-4f f1-4f up, turn_off_signals, covert f1-4f f2-4f down, turn_on_signals, reach-destination f1-4f f0-4f up]) if the (and (detected-in-prohibited)  (at-vessel-destination f0-4f)  (detected-concealment) ) was the goal\
+\
+-> %%%%%%%%%% loop 3\
+\
+-> %%%%%%%%%% explanan: [[0.28766931697644826, move f3-4f f3-3f left]]\
+\
+-> Why Not goal (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f0-4f) )?\
+-> It is because the agent did move f3-4f f3-3f left, It would have done this ([enter-surveillance-area f3-4f f2-4f up, enter-surveillance-area f2-4f f1-4f up, reach-destination f1-4f f0-4f up]) if the (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f0-4f) ) was the goal\
+\
+-> Why goal (and (detected-in-prohibited)  (not (detected-in-surveillance))  (not (detected-concealment))  (at-vessel-destination f1-1f) )?\
+-> It is because the agent did move f3-1f f2-1f up\
+\
+-> %%%%%%%%%% loop 3\
+\
+-> %%%%%%%%%% explanan: [[0.18231106632144933, move f3-2f f3-1f left]]\
+\
+-> Why Not goal (and (detected-in-prohibited)  (not (detected-in-surveillance))  (at-vessel-destination f3-0f)  (detected-concealment) )?\
+-> It is because the agent did move f3-2f f3-1f left, It would have done this ([turn_off_signals, covert f3-2f f2-2f up, turn_on_signals, move f3-2f f3-1f left, reach-destination f3-1f f3-0f left]) if the (and (detected-in-prohibited)  (not (detected-in-surveillance))  (at-vessel-destination f3-0f)  (detected-concealment) ) was the goal\
+\
+-> %%%%%%%%%% loop 4\
+\
+-> Why Not goal (and (detected-in-prohibited)  (not (detected-in-surveillance))  (not (detected-concealment))  (at-vessel-destination f3-0f) )?\
+-> It is because the agent did move f3-1f f2-1f up, It would have done this ([reach-destination f3-1f f3-0f left]) if the (and (detected-in-prohibited)  (not (detected-in-surveillance))  (not (detected-concealment))  (at-vessel-destination f3-0f) ) was the goal\
+\
+-> %%%%%%%%%% loop 3\
+\
+-> %%%%%%%%%% explanan: [[0.18231106632144933, move f3-2f f3-1f left]]\
+\
+-> Why Not goal (and (detected-in-prohibited)  (at-vessel-destination f3-0f)  (detected-concealment) )?\
+-> It is because the agent did move f3-2f f3-1f left, It would have done this ([turn_off_signals, covert f3-2f f2-2f up, turn_on_signals, move f3-2f f3-1f left, reach-destination f3-1f f3-0f left]) if the (and (detected-in-prohibited)  (at-vessel-destination f3-0f)  (detected-concealment) ) was the goal\
+\
+-> %%%%%%%%%% loop 4\
+\
+-> Why Not goal (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f3-0f) )?\
+-> It is because the agent did move f3-1f f2-1f up, It would have done this ([reach-destination f3-1f f3-0f left]) if the (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f3-0f) ) was the goal\
+\
+-> %%%%%%%%%% loop 3\
+\
+-> %%%%%%%%%% explanan: [[0.2006590779075405, move f3-4f f3-3f left]]\
+\
+-> Why Not goal (and (detected-in-prohibited)  (at-vessel-destination f0-4f)  (detected-concealment) )?\
+-> It is because the agent did move f3-4f f3-3f left, It would have done this ([enter-surveillance-area f3-4f f2-4f up, enter-surveillance-area f2-4f f1-4f up, turn_off_signals, covert f1-4f f2-4f down, turn_on_signals, reach-destination f1-4f f0-4f up]) if the (and (detected-in-prohibited)  (at-vessel-destination f0-4f)  (detected-concealment) ) was the goal\
+\
+-> %%%%%%%%%% loop 3\
+\
+-> %%%%%%%%%% explanan: [[0.28766931697644826, move f3-4f f3-3f left]]\
+\
+-> Why Not goal (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f0-4f) )?\
+-> It is because the agent did move f3-4f f3-3f left, It would have done this ([enter-surveillance-area f3-4f f2-4f up, enter-surveillance-area f2-4f f1-4f up, reach-destination f1-4f f0-4f up]) if the (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f0-4f) ) was the goal\
+\
+-> Why goal (and (detected-in-prohibited)  (detected-concealment)  (at-vessel-destination f1-1f) )?\
+-> It is because the agent did move f3-1f f2-1f up\
+\
+-> %%%%%%%%%% loop 3\
+\
+-> %%%%%%%%%% explanan: [[0.18231106632144933, move f3-2f f3-1f left]]\
+\
+-> Why Not goal (and (detected-in-prohibited)  (not (detected-in-surveillance))  (at-vessel-destination f3-0f)  (detected-concealment) )?\
+-> It is because the agent did move f3-2f f3-1f left, It would have done this ([turn_off_signals, covert f3-2f f2-2f up, turn_on_signals, move f3-2f f3-1f left, reach-destination f3-1f f3-0f left]) if the (and (detected-in-prohibited)  (not (detected-in-surveillance))  (at-vessel-destination f3-0f)  (detected-concealment) ) was the goal\
+\
+-> %%%%%%%%%% loop 4\
+\
+-> Why Not goal (and (detected-in-prohibited)  (not (detected-in-surveillance))  (not (detected-concealment))  (at-vessel-destination f3-0f) )?\
+-> It is because the agent did move f3-1f f2-1f up, It would have done this ([reach-destination f3-1f f3-0f left]) if the (and (detected-in-prohibited)  (not (detected-in-surveillance))  (not (detected-concealment))  (at-vessel-destination f3-0f) ) was the goal\
+\
+-> %%%%%%%%%% loop 3\
+\
+-> %%%%%%%%%% explanan: [[0.18231106632144933, move f3-2f f3-1f left]]\
+\
+-> Why Not goal (and (detected-in-prohibited)  (at-vessel-destination f3-0f)  (detected-concealment) )?\
+-> It is because the agent did move f3-2f f3-1f left, It would have done this ([turn_off_signals, covert f3-2f f2-2f up, turn_on_signals, move f3-2f f3-1f left, reach-destination f3-1f f3-0f left]) if the (and (detected-in-prohibited)  (at-vessel-destination f3-0f)  (detected-concealment) ) was the goal\
+\
+-> %%%%%%%%%% loop 4\
+\
+-> Why Not goal (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f3-0f) )?\
+-> It is because the agent did move f3-1f f2-1f up, It would have done this ([reach-destination f3-1f f3-0f left]) if the (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f3-0f) ) was the goal\
+\
+-> %%%%%%%%%% loop 3\
+\
+-> %%%%%%%%%% explanan: [[0.2006590779075405, move f3-4f f3-3f left]]\
+\
+-> Why Not goal (and (detected-in-prohibited)  (at-vessel-destination f0-4f)  (detected-concealment) )?\
+-> It is because the agent did move f3-4f f3-3f left, It would have done this ([enter-surveillance-area f3-4f f2-4f up, enter-surveillance-area f2-4f f1-4f up, turn_off_signals, covert f1-4f f2-4f down, turn_on_signals, reach-destination f1-4f f0-4f up]) if the (and (detected-in-prohibited)  (at-vessel-destination f0-4f)  (detected-concealment) ) was the goal\
+\
+-> %%%%%%%%%% loop 3\
+\
+-> %%%%%%%%%% explanan: [[0.28766931697644826, move f3-4f f3-3f left]]\
+\
+-> Why Not goal (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f0-4f) )?\
+-> It is because the agent did move f3-4f f3-3f left, It would have done this ([enter-surveillance-area f3-4f f2-4f up, enter-surveillance-area f2-4f f1-4f up, reach-destination f1-4f f0-4f up]) if the (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f0-4f) ) was the goal\
+\
+-> Why goal (and (detected-in-prohibited)  (not (detected-concealment))  (at-vessel-destination f1-1f) )?\
+-> It is because the agent did move f3-1f f2-1f up\
+\
+-> TPR: 1.0\
+-> FPR: 0.3\
+-> FNR: 0.0\
+\
+\
+$$$$####> Top First Ranked Percent (%): 0.0\
+$$$$####> Convergence Percent (%): 0.0\
+$$$$####> Top Ranked First times: 0.0\
+$$$$####> Average Number of Returned Goals: 8.0 (out of 10)\
+$$$$####> Total Observed Actions: 7\
+\
+$$$$####> True Positive Ratio: 1.0\
+$$$$####> False Positive Ratio: 0.7\
+$$$$####> False Negative Ratio: 0.0\
+\
+$$$$####> Total time of XGR: 0.0 seconds\
+\
+-> Total time of CF planning: 0.0 seconds\
+}

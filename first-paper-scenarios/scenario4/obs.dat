@@ -1,0 +1,5 @@
+(enter-prohibited-area f5-5f f4-5f up)
+(move f4-5f f4-4f left)
+(enter-prohibited-area f4-4f f3-4f up)
+(move f3-4f f3-3f left)
+(move f3-3f f3-2f left)
