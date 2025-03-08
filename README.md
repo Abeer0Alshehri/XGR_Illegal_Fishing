@@ -10,10 +10,10 @@ This repository contains **PDDL domain and problem files** for modeling illegal 
 - **`domain.pddl`**: Defines the predicates, actions, and constraints for illegal fishing detection. 
 
 # Usage
-1. Install a PDDL planner (e.g., Fast Downward, Metric-FF, or PDDL4J).
-2. Run a scenario with the domain file:
-
-3. Analyze the output to understand detected illegal fishing activities.
+1. Install a PDDL planner (e.g., Fast Downward, Metric-FF, ....).  
+2. Run the goal recognition model, which will use the PDDL planner to process the given domain and scenarios.  
+3. The model output is the likelihood of different illegal fishing activities based on observed actions.  
+4. Analyze the output to assess and interpret potential illegal activities. 
 
 # Citations
 If you use this repository, please cite the relevant papers:
