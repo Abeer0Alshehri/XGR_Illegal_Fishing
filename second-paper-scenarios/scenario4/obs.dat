@@ -1,0 +1,8 @@
+(move f6-5f f6-4f left)
+(move f6-4f f6-3f left)
+(move f6-3f f6-2f left)
+(turn_off_signals)
+(turn_on_signals)
+(move f5-2f f4-2f up)
+(move f4-2f f4-1f left)
+(move f4-1f f3-1f up)
