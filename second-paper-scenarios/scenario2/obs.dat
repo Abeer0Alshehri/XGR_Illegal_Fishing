@@ -1,0 +1,6 @@
+(enter-surveillance-area f8-3f f7-3f up)
+(move f7-3f f6-3f up)
+(move f6-3f f6-2f left)
+(move f6-2f f5-2f up)
+(move f5-2f f4-2f up)
+(move f4-2f f3-2f up)
