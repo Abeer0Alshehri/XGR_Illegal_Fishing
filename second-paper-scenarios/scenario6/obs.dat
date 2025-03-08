@@ -1,0 +1,7 @@
+(enter-prohibited-area f5-5f f4-5f up)
+(move f4-5f f4-4f left)
+(turn_off_signals)
+(turn_on_signals)
+(enter-prohibited-area f4-4f f3-4f up)
+(move f3-4f f3-3f left)
+(enter-surveillance-area f3-3f f2-3f up)
